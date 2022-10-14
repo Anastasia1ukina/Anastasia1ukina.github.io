@@ -1,0 +1,18 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  min-height: 880px;
+
+  background-color: #083a6d;
+  background-image: url("../img/bg-header-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: cover;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-header-desktop@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: cover;
+  }
+}

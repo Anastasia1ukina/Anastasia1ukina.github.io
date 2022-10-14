@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Device</title>
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/PTMono-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+
+<body>
+  <header class="page-header page-header--home">
+    <nav class="main-nav main-nav--home main-nav--no-js">
+      <a class="main-nav__link-user main-nav__user" href="#">
+
+        <svg class="main-nav__email" role="img" aria-hidden="true" focusable="false" width="21" height="20">
+          <use xlink:href="img/sprite/sprite.svg#email"></use>
+        </svg>
+        <span>info@sd.ru</span>
+      </a>
+      <a class="main-nav__link-user main-nav__phone-call" href="tel: +7 (495) 000 52 52">
+        <svg class="main-nav__icon-phone-call" role="img" aria-hidden="true" focusable="false" width="21" height="20">
+          <use xlink:href="img/sprite/sprite.svg#phone-call"></use>
+        </svg>
+        <span>+7 (495) 000 52 52</span>
+      </a>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <a class="page-header__logo">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
+            <source media="(max-width: 1023px)" srcset="img/header-desktop.svg">
+            <img src="img/logo-desktop.svg" width="55" height="55" alt="Логотип Smart Device.">
+          </picture>
+          <h2>Smart Device</h2>
+          <span>умные технологии</span>
+        </a>
+        <!-- <ul class="main-nav__list site-list site-list--home">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">
+              Каталог
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">
+              Доставка
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">
+              О нас
+            </a>
+          </li>
+        </ul> -->
+      </div>
+    </nav>
+    <section class="promo">
+      <h2 class="visually-hidden">Промо</h2>
+      <svg class="promo__arrow-back" role="img" aria-hidden="true" focusable="false" width="20" height="20">
+        <use href="img/sprite.svg#icon-arrow-slider-back"></use>
+      </svg>
+      <svg class="promo__arrow-forward" role="img" aria-hidden="true" focusable="false" width="20" height="20">
+        <use href="img/sprite.svg#icon-arrow-slider-forward"></use>
+      </svg>
+    </section>
+  </header>
+
+  <main>
+    <section class="benefits">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <ul class="benefits__list list-reset">
+        <li class="benefits__item benefits__item--stopwatch">
+          <h3 class="benefits__item-title">Оперативные сроки</h3>
+          Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять
+          заказы плат и комплектующих в самые короткие сроки
+        </li>
+        <li class="benefits__item benefits__item--hired">
+          <h3 class="benefits__item-title">Крупные поставщики</h3>
+          Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
+          Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.
+        </li>
+        <li class="benefits__item benefits__item--detective">
+          <h3 class="benefits__item-title">Полная конфиденциальность</h3>
+          По желанию клиента мы обеспечиваем полную конфиденциальность.
+        </li>
+        <li class="benefits__item benefits__item--price">
+          <h3 class="benefits__item-title">Персонализация стоимости</h3>
+          Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
+          устраивает.
+        </li>
+      </ul>
+    </section>
+
+    <section class="about-company">
+      <h2 class="about-company__title">О компании</h2>
+      <p class="about-company__description-intro">Мы поставляем электронные комплектующие, производим печатные платы и
+        предоставляем мировые технологии с 1997
+        года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+      <p class="about-company__description">Наши поставщики - мировые производители электронных компонентов: OSRAM,
+        CREE, HOLGLITRONIC, REFOND. Печатные
+        платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома
+        (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+      <a class="about-company__button button" href="#">Подробнее</a>
+    </section>
+
+    <section class="product">
+      <h2 class="product__title">Smart Device предлагает следующие товары и услуги</h2>
+      <div class="product__wrapper">
+        <ul class="product__list list-reset">
+          <li class="product__card product__card--astoria">
+            <div class="product__card-wrapper">
+              <div class="product__card-container">
+                <a class="product__card-link" href="#">
+                  <span class="product__card-title subtitle">Производство печатных плат</span>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li class="product__card product__card--astoria">
+            <div class="product__card-wrapper">
+              <div class="product__card-container">
+                <a class="product__card-link" href="#">
+                  <span class="product__card-title subtitle">Монтаж печатных плат</span>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li class="product__card product__card--astoria">
+            <div class="product__card-wrapper">
+              <div class="product__card-container">
+                <a class="product__card-link" href="#">
+                  <span class="product__card-title subtitle">Комплектующие для светотехники</span>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="form">
+      <form class="form__auth" action="https://echo.htmlacademy.ru/" method="post">
+        <h2 class="form__title">Остались вопросы? Задайте их нам!</h2>
+        <span class="form__intro">Мы проконсультируем Вас бесплатно</span>
+        <p class="form__field-group appointment-form-name paragraph">
+          <label class="title-modal-form" for="appointment-name">
+            <input class="form__field" type="text" id="appointment-name" name="appointment-name" placeholder="Имя">
+          </label>
+        </p>
+        <p class="form__field-group modal-delivery-e-mail paragraph">
+          <label class="form__title-modal-form" for="modal-email">
+            <input class="field field-e-mail" type="tel" id="modal-email" name="modal-e-mail" placeholder="Телефон">
+          </label>
+        </p>
+        <textarea class="form__field-group" placeholder="Ваш вопрос"></textarea>
+        <button class="form__button button" type="submit">
+          <span>Задать вопрос</span>
+        </button>
+        <label class="form__personal-data">Я согласен на обработку персональных данных
+          <input type="checkbox" name="personal-data" value="personal-data">
+          <span class="form__checkmark"></span>
+        </label>
+      </form>
+    </section>
+  </main>
+
+  <!-- Футер -->
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper-desktop">
+        <div class="page-footer__logo-text page-footer__social social">
+          <ul class="social__list list-reset">
+            <li class="social__item">
+              <a class="page-footer__logo">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/footer-logo-desktop-2go.svg">
+                  <source media="(min-width: 768px)" srcset="img/footer-logo-tablet-2go.svg">
+                  <img src="img/footer-logo-mobile-2go.svg" width="82" height="36" alt="Логотип Smart Device">
+                </picture>
+                <h2>Smart Device</h2>
+                <span>умные технологии</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <svg role="img" aria-hidden="true" focusable="false" width="20" height="20">
+                  <use href="img/sprite.svg#icon-vkontakte"></use>
+                </svg>
+                <span class="visually-hidden">Одноклассники</span>
+              </a>
+
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--pinterest" href="https://www.pinterest.ru/htmlacademy">
+                <svg role="img" aria-hidden="true" focusable="false" width="22" height="22">
+                  <use href="img/sprite.svg#icon-pinterest"></use>
+                </svg>
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--ok" href="https://ok.ru/htmlacademy">
+                <svg role="img" aria-hidden="true" focusable="false" width="20" height="20">
+                  <use href="img/sprite.svg#icon-ok"></use>
+                </svg>
+                <span class="visually-hidden">Пинтерест</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__wrapper-important-list">
+          <div class="page-footer__online-store">
+            <h4 class="page-footer__title">Разделы сайта</h4>
+            <ul class="page-footer__list">
+              <li>
+                <a class="page-footer__link" href="#">О Компаниии</a>
+              </li>
+              <li>
+                <a class="page-footer__link" href="#">Продукты</a>
+              </li>
+              <li>
+                <a class="page-footer__link" href="#">Производство печатных плат</a>
+              </li>
+              <li>
+                <a class="page-footer__link" href="#">Монтаж печатных плат</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__media">
+            <ul class="page-footer__list">
+              <li>
+                <a class="page-footer__link" href="#">Комплектующие</a>
+              </li>
+              <li>
+                <a class="page-footer__link" href="#">Доставка</a>
+              </li>
+              <li>
+                <a class="page-footer__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__contacts">
+            <h4 class="page-footer__title">Наш офис</h4>
+            <ul class="page-footer__list-contacts">
+              <li>
+                <a class="page-footer__link-contacts" href="#">г. Мытищи, Олимпийский проспект, д.10</a>
+              </li>
+              <li>
+                <a class="page-footer__link-contacts" href="tel:+7 (495) 589-40-50">+7 (495) 589-40-50</a>
+              </li>
+              <li>
+                <a class="page-footer__link-contacts" href="tel:+7 (925) 389-58-29">+7 (925) 389-58-29</a>
+              </li>
+              <li>
+                <a class="page-footer__link-contacts" href="tel:+7 (925) 364-78-13">+7 (925) 364-78-13</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

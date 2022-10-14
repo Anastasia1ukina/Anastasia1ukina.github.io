@@ -1,0 +1,67 @@
+// Vendor
+// ---------------------------------
+
+@import "vendor/normalize";
+// Swiper 7.4.1
+// @import "vendor/swiper";
+
+// Global
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+
+// Blocks
+@import "blocks/btn";
+@import "blocks/modal";
+@import "blocks/promo";
+
+// ---------------------------------
+
+// ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
+
+// ❗ обязательно используйте @media для отключения ховеров на тач устройствах
+// но не используйте для текстовых полей ( input, textarea )
+/* @media (hover: hover), screen and (min-width: 0\0) {
+  &:hover,
+  &:focus {
+    color: $color-default-white;
+  }
+} */
+
+// адаптив пишем внутри каждого класса (смотрим container.scss)
+
+// для фикса проблем с vh на iOS в сборке подключен скрипт
+// используя vh на проекте задавайте их также как в примере в utils.scss
+
+// для любых transition обязательно указывайте transition-property
+// transition: $trans-default ❌ ---> transition: color $trans-default ✅
+
+// Globals
+// @import "./global/variables.scss";
+// @import "./global/global.scss";
+// @import "./global/fonts.scss";
+// @import "./global/button.scss";
+
+// // Components
+// @import "./components/page-header.scss";
+// @import "./components/promo.scss";
+// @import "./components/program.scss";
+// @import "./components/work.scss";
+// @import "./components/live-example.scss";
+// @import "./components/advantages.scss";
+// @import "./components/slider.scss";
+// @import "./components/location.scss";
+// @import "./components/page-footer.scss";
+// @import "./components/copyright.scss";
+// @import "./components/form-title.scss";
+// @import "./components/form.scss";
+// @import "./components/social.scss";
+// @import "./components/product.scss";
+// @import "./components/additional-goods.scss";
+// @import "./components/present.scss";
+// @import "./components/main-nav.scss";
+// @import "./components/site-list.scss";
+// @import "./components/mini-description.scss"
