@@ -622,7 +622,7 @@ button,
   margin: 0 auto;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
-  width: 970px;
+  width: 975px;
 }
 
 .promo__title {
@@ -804,27 +804,6 @@ button,
 }
 
 .main-nav__container {
-  width: 1220px;
-  margin: 0 auto;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
-
-.benefits {
-  width: 1220px;
-  margin: 120px auto 120px auto;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
-
-.about-company {
-  width: 1220px;
-  margin: 0 auto;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
-
-.product__wrapper {
   width: 1220px;
   margin: 0 auto;
   -webkit-box-sizing: content-box;
@@ -1030,6 +1009,12 @@ button,
 }
 
 @media (min-width: 1024px) and (max-width: 1919px) {
+  .promo__wrapper {
+    margin-left: auto;
+    max-width: 975px;
+    width: 90%;
+  }
+
   .main-nav__container {
     max-width: 1220px;
     width: 95%;
@@ -1038,12 +1023,26 @@ button,
   .page-footer__wrapper {
     max-width: 1220px;
     width: 95%;
-    padding: 50px 0 55px;
-    gap: 30px;
   }
 
   .page-footer__logo-text {
     margin-right: auto;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1120px) {
+  .page-footer__list {
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+  }
+
+  .page-footer__online-store {
+    margin-right: 40px;
+  }
+
+  .page-footer__logo-text {
+    margin-right: 40px;
   }
 }
 

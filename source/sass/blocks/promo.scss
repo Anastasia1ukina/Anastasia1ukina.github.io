@@ -24,7 +24,13 @@
 .promo__wrapper {
   margin: 0 auto;
   box-sizing: content-box;
-  width: 970px;
+  width: 975px;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    margin-left: auto;
+    max-width: 975px;
+    width: 90%;
+  }
 }
 
 .promo__title {

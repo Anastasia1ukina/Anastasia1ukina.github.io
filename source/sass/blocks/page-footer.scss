@@ -14,8 +14,6 @@
   @media (min-width: $desktop-min) and (max-width: $desktop-max) {
     max-width: 1220px;
     width: 95%;
-    padding: 50px 0 55px;
-    gap: 30px;
   }
 
   @media (max-width: $tablet-width) {
@@ -71,6 +69,10 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+    column-gap: 40px;
+  }
 }
 
 .page-footer__link {
@@ -117,6 +119,10 @@
 
 .page-footer__online-store {
   margin-right: 126px;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+    margin-right: 40px;
+  }
 }
 
 .page-footer__logo-text {
@@ -125,5 +131,9 @@
 
   @media (min-width: $desktop-min) and (max-width: $desktop-max) {
     margin-right: auto;
+  }
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
+    margin-right: 40px;
   }
 }
