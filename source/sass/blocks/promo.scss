@@ -2,17 +2,69 @@
   display: flex;
   flex-direction: column;
   min-height: 880px;
+  margin-top: 20px;
+  padding: 305px 0 280px;
 
   background-color: #083a6d;
-  background-image: url("../img/bg-header-desktop.jpg");
+  background-image: linear-gradient(#19202440 0%, #19202440 100%),
+    url("../img/bg-header-desktop.jpg");
   background-repeat: no-repeat;
-  background-position: 0 center;
+  background-position: center;
   background-size: cover;
 
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/bg-header-desktop@2x.jpg");
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: linear-gradient(#19202440 0%, #19202440 100%), url("../img/bg-header-desktop@2x.jpg");
     background-repeat: no-repeat;
-    background-position: 0 center;
+    background-position: center;
     background-size: cover;
   }
+}
+
+.promo__wrapper {
+  margin: 0 auto;
+  box-sizing: content-box;
+  width: 970px;
+}
+
+.promo__title {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #f2f5f7;
+  padding-bottom: 40px;
+}
+
+.promo__description {
+  margin: 0;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  color: #f2f5f7;
+  padding-bottom: 55px;
+  width: 640px;
+}
+
+.promo__button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 15px 25px;
+
+  color: #f2f5f7;
+  background-color: #00b2ff;
+  border: none;
+  border-radius: 3px;
 }

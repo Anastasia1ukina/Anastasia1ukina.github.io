@@ -1,0 +1,28 @@
+.social__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social__link {
+  position: absolute;
+
+  &--classmates {
+    left: 15px;
+    top: 77px;
+  }
+
+  &--vk {
+    left: 70px;
+    top: 77px;
+  }
+
+  &--pinterest {
+    left: 125px;
+    top: 77px;
+  }
+}
+
+.social {
+  position: relative;
+}

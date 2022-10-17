@@ -1,0 +1,97 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  min-height: 120px;
+  background: linear-gradient(180deg, #041827 85%, #04182700 100%);
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.main-nav__icon-user {
+  position: absolute;
+  right: 265px;
+  top: 32px;
+}
+
+.main-nav__icon-cart {
+  position: absolute;
+  right: 133px;
+  top: 32px;
+}
+
+.main-nav__list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-nav__toggle {
+  width: 160px;
+  height: 40px;
+  background-color: #041827;
+  border: 1px solid #f2f5f6;
+  border-radius: 3px;
+}
+
+.main-nav__toggle span {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #f2f5f7;
+}
+
+.main-nav__link-user span {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #f2f5f7;
+  padding-left: 35px;
+}
+
+.main-nav__email {
+  top: 39px;
+  position: absolute;
+}
+
+.main-nav__icon-phone-call {
+  top: 39px;
+  position: absolute;
+}
+
+.main-mav__item {
+  &--contacts {
+    margin-top: 5px;
+  }
+}
+
+.main-nav__container {
+  width: 1220px;
+  margin: 0 auto;
+  box-sizing: content-box;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    max-width: 1220px;
+    width: 95%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 86.9%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 84%;
+  }
+}

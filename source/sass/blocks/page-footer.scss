@@ -1,0 +1,129 @@
+.page-footer {
+  background-color: #041827;
+  flex: 0 0 auto;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1220px;
+  padding: 50px 0 55px;
+  margin: 0 auto;
+  box-sizing: content-box;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    max-width: 1220px;
+    width: 95%;
+    padding: 50px 0 55px;
+    gap: 30px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 87%;
+    padding: 50px 0 65px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: auto;
+    padding: 35px 0;
+    flex-direction: column;
+    row-gap: 0;
+  }
+}
+
+.page-footer__logo h2 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  color: #f2f5f7;
+  margin: 0;
+}
+
+.page-footer__logo span {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #f8fdffb3;
+}
+
+.page-footer__title {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.page-footer__list {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  row-gap: 9px;
+  column-gap: 49px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-footer__link {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffffb3;
+}
+
+.page-footer__list-contacts {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.page-footer__link-contacts {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffffb3;
+}
+
+.page-footer__logo {
+  display: flex;
+  width: 215px;
+  height: 55px;
+}
+
+.page-footer__logo-descript {
+  margin-left: 15px;
+}
+
+.page-footer__wrapper-important-list {
+  display: flex;
+}
+
+.page-footer__online-store {
+  margin-right: 126px;
+}
+
+.page-footer__logo-text {
+  margin-right: 145px;
+  flex-shrink: 0;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    margin-right: auto;
+  }
+}

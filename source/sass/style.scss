@@ -7,16 +7,19 @@
 
 // Global
 @import "variables";
-@import "mixins";
 @import "global/fonts";
 @import "global/reboot";
-@import "global/utils";
-@import "global/container";
 
 // Blocks
 @import "blocks/btn";
-@import "blocks/modal";
 @import "blocks/promo";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/benefits";
+@import "blocks/about-company";
+@import "blocks/product";
+@import "blocks/page-footer";
+@import "blocks/social";
 
 // ---------------------------------
 

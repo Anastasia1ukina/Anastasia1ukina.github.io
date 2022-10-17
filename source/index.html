@@ -17,62 +17,52 @@
 <body>
   <header class="page-header page-header--home">
     <nav class="main-nav main-nav--home main-nav--no-js">
-      <a class="main-nav__link-user main-nav__user" href="#">
-
-        <svg class="main-nav__email" role="img" aria-hidden="true" focusable="false" width="21" height="20">
-          <use xlink:href="img/sprite/sprite.svg#email"></use>
-        </svg>
-        <span>info@sd.ru</span>
-      </a>
-      <a class="main-nav__link-user main-nav__phone-call" href="tel: +7 (495) 000 52 52">
-        <svg class="main-nav__icon-phone-call" role="img" aria-hidden="true" focusable="false" width="21" height="20">
-          <use xlink:href="img/sprite/sprite.svg#phone-call"></use>
-        </svg>
-        <span>+7 (495) 000 52 52</span>
-      </a>
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <a class="page-header__logo">
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
-            <source media="(max-width: 1023px)" srcset="img/header-desktop.svg">
-            <img src="img/logo-desktop.svg" width="55" height="55" alt="Логотип Smart Device.">
-          </picture>
-          <h2>Smart Device</h2>
-          <span>умные технологии</span>
-        </a>
-        <!-- <ul class="main-nav__list site-list site-list--home">
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--active" href="index.html">
-              Главная
+      <div class="main-nav__container">
+        <ul class="main-nav__list">
+          <li class="main-mav__item">
+            <div class="main-nav__wrapper">
+              <a class="page-header__logo">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
+                  <source media="(max-width: 1023px)" srcset="img/svg/logo-desktop.svg">
+                  <img src="img/svg/logo-desktop.svg" width="55" height="55" alt="Логотип Smart Device.">
+                </picture>
+                <div class="page-header__logo-descript">
+                  <h2>Smart Device</h2>
+                  <span>умные технологии</span>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="main-mav__item main-mav__item--contacts">
+            <a class="main-nav__link-user main-nav__user" href="#">
+              <svg class="main-nav__email" role="img" aria-hidden="true" focusable="false" width="21" height="20">
+                <use xlink:href="img/sprite.svg#email"></use>
+              </svg>
+              <span>info@sd.ru</span>
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">
-              Каталог
+          <li class="main-mav__item main-mav__item--contacts">
+            <a class="main-nav__link-user main-nav__phone-call" href="tel: +7 (495) 000 52 52">
+              <svg class="main-nav__icon-phone-call" role="img" aria-hidden="true" focusable="false" width="21"
+                height="20">
+                <use xlink:href="img/sprite.svg#phone-call"></use>
+              </svg>
+              <span>+7 (495) 000 52 52</span>
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">
-              Доставка
-            </a>
+          <li class="main-mav__item">
+            <button class="main-nav__toggle" type="button"><span>Заказать звонок</span></button>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">
-              О нас
-            </a>
-          </li>
-        </ul> -->
+        </ul>
       </div>
     </nav>
     <section class="promo">
-      <h2 class="visually-hidden">Промо</h2>
-      <svg class="promo__arrow-back" role="img" aria-hidden="true" focusable="false" width="20" height="20">
-        <use href="img/sprite.svg#icon-arrow-slider-back"></use>
-      </svg>
-      <svg class="promo__arrow-forward" role="img" aria-hidden="true" focusable="false" width="20" height="20">
-        <use href="img/sprite.svg#icon-arrow-slider-forward"></use>
-      </svg>
+      <div class="promo__wrapper">
+        <h1 class="promo__title">Печатные платы</h1>
+        <p class="promo__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <a class="promo__button button" href="#">Получить бесплатную консультацию</a>
+      </div>
     </section>
   </header>
 
@@ -115,8 +105,8 @@
     </section>
 
     <section class="product">
-      <h2 class="product__title">Smart Device предлагает следующие товары и услуги</h2>
       <div class="product__wrapper">
+        <h2 class="product__title">Smart Device предлагает следующие товары и услуги</h2>
         <ul class="product__list list-reset">
           <li class="product__card product__card--astoria">
             <div class="product__card-wrapper">
@@ -155,14 +145,14 @@
       <form class="form__auth" action="https://echo.htmlacademy.ru/" method="post">
         <h2 class="form__title">Остались вопросы? Задайте их нам!</h2>
         <span class="form__intro">Мы проконсультируем Вас бесплатно</span>
-        <p class="form__field-group appointment-form-name paragraph">
-          <label class="title-modal-form" for="appointment-name">
+        <p class="form__field-group">
+          <label class="form__title-modal-form" for="appointment-name">
             <input class="form__field" type="text" id="appointment-name" name="appointment-name" placeholder="Имя">
           </label>
         </p>
-        <p class="form__field-group modal-delivery-e-mail paragraph">
-          <label class="form__title-modal-form" for="modal-email">
-            <input class="field field-e-mail" type="tel" id="modal-email" name="modal-e-mail" placeholder="Телефон">
+        <p class="form__field-grouph">
+          <label class="form__title-modal-form" for="modal-phone">
+            <input class="form__field" type="tel" id="modal-phone" name="modal-phone" placeholder="Телефон">
           </label>
         </p>
         <textarea class="form__field-group" placeholder="Ваш вопрос"></textarea>
@@ -180,96 +170,92 @@
   <!-- Футер -->
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <div class="page-footer__wrapper-desktop">
-        <div class="page-footer__logo-text page-footer__social social">
-          <ul class="social__list list-reset">
-            <li class="social__item">
-              <a class="page-footer__logo">
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="img/footer-logo-desktop-2go.svg">
-                  <source media="(min-width: 768px)" srcset="img/footer-logo-tablet-2go.svg">
-                  <img src="img/footer-logo-mobile-2go.svg" width="82" height="36" alt="Логотип Smart Device">
-                </picture>
+      <div class="page-footer__logo-text page-footer__social social">
+        <ul class="social__list list-reset">
+          <li class="social__item">
+            <a class="page-footer__logo">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
+                <source media="(max-width: 1023px)" srcset="img/svg/logo-desktop.svg">
+                <img src="img/svg/logo-desktop.svg" width="55" height="55" alt="Логотип Smart Device.">
+              </picture>
+              <div class="page-footer__logo-descript">
                 <h2>Smart Device</h2>
                 <span>умные технологии</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <svg role="img" aria-hidden="true" focusable="false" width="20" height="20">
-                  <use href="img/sprite.svg#icon-vkontakte"></use>
-                </svg>
-                <span class="visually-hidden">Одноклассники</span>
-              </a>
+              </div>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--classmates" href="https://vk.com/htmlacademy">
+              <svg role="img" aria-hidden="true" focusable="false" width="30" height="30">
+                <use href="img/sprite.svg#classmates"></use>
+              </svg>
+              <span class="visually-hidden">Одноклассники</span>
+            </a>
 
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--pinterest" href="https://www.pinterest.ru/htmlacademy">
-                <svg role="img" aria-hidden="true" focusable="false" width="22" height="22">
-                  <use href="img/sprite.svg#icon-pinterest"></use>
-                </svg>
-                <span class="visually-hidden">Вконтакте</span>
-              </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="https://www.pinterest.ru/htmlacademy">
+              <svg role="img" aria-hidden="true" focusable="false" width="30" height="30">
+                <use href="img/sprite.svg#vk"></use>
+              </svg>
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
 
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--pinterest" href="https://ok.ru/htmlacademy">
+              <svg role="img" aria-hidden="true" focusable="false" width="30" height="30">
+                <use href="img/sprite.svg#pinterest"></use>
+              </svg>
+              <span class="visually-hidden">Пинтерест</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__wrapper-important-list">
+        <div class="page-footer__online-store">
+          <h4 class="page-footer__title">Разделы сайта</h4>
+          <ul class="page-footer__list">
+            <li>
+              <a class="page-footer__link" href="#">О Компаниии</a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--ok" href="https://ok.ru/htmlacademy">
-                <svg role="img" aria-hidden="true" focusable="false" width="20" height="20">
-                  <use href="img/sprite.svg#icon-ok"></use>
-                </svg>
-                <span class="visually-hidden">Пинтерест</span>
-              </a>
+            <li>
+              <a class="page-footer__link" href="#">Комплектующие</a>
+            </li>
+            <li>
+              <a class="page-footer__link" href="#">Продукты</a>
+            </li>
+            <li>
+              <a class="page-footer__link" href="#">Доставка</a>
+            </li>
+            <li>
+              <a class="page-footer__link" href="#">Производство печатных<br> плат</a>
+            </li>
+            <li>
+              <a class="page-footer__link" href="#">Контакты</a>
+            </li>
+            <li>
+              <a class="page-footer__link" href="#">Монтаж печатных плат</a>
             </li>
           </ul>
         </div>
-        <div class="page-footer__wrapper-important-list">
-          <div class="page-footer__online-store">
-            <h4 class="page-footer__title">Разделы сайта</h4>
-            <ul class="page-footer__list">
-              <li>
-                <a class="page-footer__link" href="#">О Компаниии</a>
-              </li>
-              <li>
-                <a class="page-footer__link" href="#">Продукты</a>
-              </li>
-              <li>
-                <a class="page-footer__link" href="#">Производство печатных плат</a>
-              </li>
-              <li>
-                <a class="page-footer__link" href="#">Монтаж печатных плат</a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__media">
-            <ul class="page-footer__list">
-              <li>
-                <a class="page-footer__link" href="#">Комплектующие</a>
-              </li>
-              <li>
-                <a class="page-footer__link" href="#">Доставка</a>
-              </li>
-              <li>
-                <a class="page-footer__link" href="#">Контакты</a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__contacts">
-            <h4 class="page-footer__title">Наш офис</h4>
-            <ul class="page-footer__list-contacts">
-              <li>
-                <a class="page-footer__link-contacts" href="#">г. Мытищи, Олимпийский проспект, д.10</a>
-              </li>
-              <li>
-                <a class="page-footer__link-contacts" href="tel:+7 (495) 589-40-50">+7 (495) 589-40-50</a>
-              </li>
-              <li>
-                <a class="page-footer__link-contacts" href="tel:+7 (925) 389-58-29">+7 (925) 389-58-29</a>
-              </li>
-              <li>
-                <a class="page-footer__link-contacts" href="tel:+7 (925) 364-78-13">+7 (925) 364-78-13</a>
-              </li>
-            </ul>
-          </div>
+        <div class="page-footer__contacts">
+          <h4 class="page-footer__title">Наш офис</h4>
+          <ul class="page-footer__list-contacts">
+            <li>
+              <a class="page-footer__link-contacts" href="#">г. Мытищи, Олимпийский проспект,<br> д.10</a>
+            </li>
+            <li>
+              <a class="page-footer__link-contacts" href="tel:+7 (495) 589-40-50">+7 (495) 589-40-50</a>
+            </li>
+            <li>
+              <a class="page-footer__link-contacts" href="tel:+7 (925) 389-58-29">+7 (925) 389-58-29</a>
+            </li>
+            <li>
+              <a class="page-footer__link-contacts" href="tel:+7 (925) 364-78-13">+7 (925) 364-78-13</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

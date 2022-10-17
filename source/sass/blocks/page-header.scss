@@ -1,0 +1,42 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #04182700;
+}
+
+.page-header__logo span {
+  display: inline-block;
+  width: 110px;
+  position: absolute;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffffb3;
+}
+
+.page-header__logo h2 {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  color: #f2f5f7;
+}
+
+.page-header--home {
+  min-height: 543px;
+}
+
+.page-header__logo {
+  display: flex;
+  width: 215px;
+  height: 55px;
+}
+
+.page-header__logo-descript {
+  margin-left: 15px;
+}
