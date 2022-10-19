@@ -1,5 +1,74 @@
-// .product__wrapper {
-//   width: 1220px;
-//   margin: 0 auto;
-//   box-sizing: content-box;
-// }
+.product__wrapper {
+  width: 1220px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  padding-top: 70px;
+  padding-bottom: 140px;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    max-width: 1220px;
+    width: 95%;
+}
+}
+
+.product {
+  background-color: #041827;
+}
+
+.product__title {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+  padding-bottom: 50px;
+}
+
+.product__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product__card-title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  padding-left: 40px;
+  margin: 0;
+  width: 210px;
+  top: 50px;
+  position: absolute;
+}
+
+.product__card {
+  position: relative;
+  height: 650px;
+  width: 350px;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    width: 28.5%;
+    height: 100%;
+}
+}
+
+.product__card::after {
+  content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 3px;
+    background: #00b2ff url("../img/svg/arrow.svg") center no-repeat;
+    pointer-events: none;
+}
+

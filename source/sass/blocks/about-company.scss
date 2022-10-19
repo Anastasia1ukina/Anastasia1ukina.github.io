@@ -1,5 +1,77 @@
-// .about-company {
-//   width: 1220px;
-//   margin: 0 auto;
-//   box-sizing: content-box;
-// }
+.about-company {
+  width: 1220px;
+  margin: 0 auto;
+  box-sizing: content-box;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    max-width: 1220px;
+    width: 95%;
+}
+}
+
+.about-company__wrapper {
+  position: relative;
+  padding: 0 0 120px 250px;
+}
+
+.about-company__wrapper::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 320px;
+  background: url("../img/2022.png") no-repeat;
+  top: 0;
+  left: 0;
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background: url("../img/2022@2x.png") no-repeat;
+    background-size: 150px auto;
+  }
+}
+
+.about-company__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #041827;
+  margin: 0 0 15px 0;
+}
+
+.about-company p {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #041827;
+}
+
+.about-company__button {
+  font-family: "Roboto Condensed", "Aria", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #00B2FF;
+  padding: 0;
+  cursor: pointer;
+
+  background-color: #ffffff;
+  border: 1px solid #00b2ff;
+  width: 180px;
+  height: 45px;
+}
+
+.about-company__description-intro {
+  margin: 0 0 25px 0;
+}
+
+.about-company__description {
+  margin: 0 0 45px 0;
+}

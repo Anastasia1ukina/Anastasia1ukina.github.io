@@ -20,19 +20,17 @@
       <div class="main-nav__container">
         <ul class="main-nav__list">
           <li class="main-mav__item">
-            <div class="main-nav__wrapper">
-              <a class="page-header__logo">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
-                  <source media="(max-width: 1023px)" srcset="img/svg/logo-desktop.svg">
-                  <img src="img/svg/logo-desktop.svg" width="55" height="55" alt="Логотип Smart Device.">
-                </picture>
-                <div class="page-header__logo-descript">
-                  <h2>Smart Device</h2>
-                  <span>умные технологии</span>
-                </div>
-              </a>
-            </div>
+            <a class="page-header__logo">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
+                <source media="(max-width: 1023px)" srcset="img/svg/logo-desktop.svg">
+                <img src="img/svg/logo-desktop.svg" width="55" height="55" alt="Логотип Smart Device.">
+              </picture>
+              <div class="page-header__logo-descript">
+                <h2>Smart Device</h2>
+                <span>умные технологии</span>
+              </div>
+            </a>
           </li>
           <li class="main-mav__item main-mav__item--contacts">
             <a class="main-nav__link-user main-nav__user" href="#">
@@ -71,37 +69,62 @@
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="benefits__list list-reset">
         <li class="benefits__item benefits__item--stopwatch">
+          <span class="benefits__line"></span>
+          <svg class="benefits__icon benefits__icon--stopwatch" role="img" aria-hidden="true" focusable="false"
+            width="35" height="35" fill="#00b2ff">
+            <use xlink:href="img/sprite.svg#stopwatch"></use>
+          </svg>
           <h3 class="benefits__item-title">Оперативные сроки</h3>
-          Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять
-          заказы плат и комплектующих в самые короткие сроки
+          <p>Усовершенствованная логистическая система позволяет<br> нам просчитывать стоимость, производить и
+            доставлять
+            заказы плат и комплектующих в самые короткие сроки</p>
         </li>
         <li class="benefits__item benefits__item--hired">
+          <span class="benefits__line"></span>
+          <svg class="benefits__icon benefits__icon--hired" role="img" aria-hidden="true" focusable="false" width="35"
+            height="35" fill="#00b2ff">
+            <use xlink:href="img/sprite.svg#hired"></use>
+          </svg>
           <h3 class="benefits__item-title">Крупные поставщики</h3>
-          Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
-          Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.
+          <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
+            Сотрудничество с такими компаниями обеспичивает<br> хорошее качество нашей продукции.</p>
         </li>
         <li class="benefits__item benefits__item--detective">
+          <span class="benefits__line"></span>
+          <svg class="benefits__icon benefits__icon--detective" role="img" aria-hidden="true" focusable="false"
+            width="35" height="35" fill="#00b2ff">
+            <use xlink:href="img/sprite.svg#detective"></use>
+          </svg>
           <h3 class="benefits__item-title">Полная конфиденциальность</h3>
-          По желанию клиента мы обеспечиваем полную конфиденциальность.
+          <p>По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
         </li>
         <li class="benefits__item benefits__item--price">
+          <span class="benefits__line"></span>
+          <svg class="benefits__icon benefits__icon--price" role="img" aria-hidden="true" focusable="false" width="35"
+            height="35" fill="#00b2ff">
+            <use xlink:href="img/sprite.svg#price"></use>
+          </svg>
           <h3 class="benefits__item-title">Персонализация стоимости</h3>
-          Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
-          устраивает.
+          <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
+            устраивает.</p>
         </li>
       </ul>
     </section>
 
     <section class="about-company">
-      <h2 class="about-company__title">О компании</h2>
-      <p class="about-company__description-intro">Мы поставляем электронные комплектующие, производим печатные платы и
-        предоставляем мировые технологии с 1997
-        года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-      <p class="about-company__description">Наши поставщики - мировые производители электронных компонентов: OSRAM,
-        CREE, HOLGLITRONIC, REFOND. Печатные
-        платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома
-        (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
-      <a class="about-company__button button" href="#">Подробнее</a>
+      <div class="about-company__wrapper">
+        <h2 class="about-company__title">О компании</h2>
+        <p class="about-company__description-intro">Мы поставляем электронные комплектующие, производим печатные платы и
+          предоставляем мировые технологии с 1997
+          года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+        <p class="about-company__description">Наши поставщики - мировые производители электронных компонентов: OSRAM,
+          CREE, HOLGLITRONIC, REFOND. Печатные
+          платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
+          РоссАвтоПрома
+          (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
+        </p>
+        <button class="about-company__button button" href="#">Подробнее</button>
+      </div>
     </section>
 
     <section class="product">
@@ -109,61 +132,87 @@
         <h2 class="product__title">Smart Device предлагает следующие товары и услуги</h2>
         <ul class="product__list list-reset">
           <li class="product__card product__card--astoria">
-            <div class="product__card-wrapper">
-              <div class="product__card-container">
-                <a class="product__card-link" href="#">
-                  <span class="product__card-title subtitle">Производство печатных плат</span>
-                </a>
-              </div>
-            </div>
+              <a class="product__card-link" href="#">
+                <div class="product__card-img">
+                  <picture>
+                    <source media="(max-width: 769px)" type="image/webp"
+                      srcset="img/product-card-1-mobile.webp 1x, img/product-card-1-mobile@2x.webp 2x">
+                    <source media="(max-width: 1023px)" type="image/webp"
+                      srcset="img/product-card-1-tablet.webp 1x, img/product-card-1-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/product-card-1-desktop.webp 1x, img/product-card-1-desktop@2x.webp 2x">
+                    <img src="img/product-card-1-desktop.jpg" srcset="img/product-card-1-desktop@2x.jpg 2x" width="350"
+                      height="650" alt="Производство печатных плат">
+                  </picture>
+                </div>
+                <h4 class="product__card-title subtitle">Производство печатных плат</h4>
+              </a>
           </li>
 
           <li class="product__card product__card--astoria">
-            <div class="product__card-wrapper">
-              <div class="product__card-container">
-                <a class="product__card-link" href="#">
-                  <span class="product__card-title subtitle">Монтаж печатных плат</span>
-                </a>
-              </div>
-            </div>
+              <a class="product__card-link" href="#">
+                <div class="product__card-img">
+                  <picture>
+                    <source media="(max-width: 769px)" type="image/webp"
+                      srcset="img/product-card-2-mobile.webp 1x, img/product-card-2-mobile@2x.webp 2x">
+                    <source media="(max-width: 1023px)" type="image/webp"
+                      srcset="img/product-card-2-tablet.webp 1x, imgproduct-card-2-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/product-card-2-desktop.webp 1x, img/product-card-2-desktop@2x.webp 2x">
+                    <img src="img/product-card-2-desktop.jpg" srcset="img/product-card-2-desktop@2x.jpg 2x" width="350"
+                      height="650" alt="Монтаж печатных плат">
+                  </picture>
+                </div>
+                <h4 class="product__card-title subtitle">Монтаж печатных плат</h4>
+              </a>
           </li>
 
           <li class="product__card product__card--astoria">
-            <div class="product__card-wrapper">
-              <div class="product__card-container">
-                <a class="product__card-link" href="#">
-                  <span class="product__card-title subtitle">Комплектующие для светотехники</span>
-                </a>
-              </div>
-            </div>
+              <a class="product__card-link" href="#">
+                <div class="product__card-img">
+                  <picture>
+                    <source media="(max-width: 769px)" type="image/webp"
+                      srcset="img/product-card-3-mobile.webp 1x, img/product-card-3-mobile@2x.webp 2x">
+                    <source media="(max-width: 1023px)" type="image/webp"
+                      srcset="img/product-card-3-tablet.webp 1x, imgproduct-card-3-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/product-card-3-desktop.webp 1x, img/product-card-3-desktop@2x.webp 2x">
+                    <img src="img/product-card-3-desktop.jpg" srcset="img/product-card-3-desktop@2x.jpg 2x" width="350"
+                      height="650" alt="Комплектующие для светотехники">
+                  </picture>
+                </div>
+                <h4 class="product__card-title subtitle">Комплектующие для светотехники</h4>
+              </a>
           </li>
         </ul>
       </div>
     </section>
 
     <section class="form">
-      <form class="form__auth" action="https://echo.htmlacademy.ru/" method="post">
-        <h2 class="form__title">Остались вопросы? Задайте их нам!</h2>
-        <span class="form__intro">Мы проконсультируем Вас бесплатно</span>
-        <p class="form__field-group">
-          <label class="form__title-modal-form" for="appointment-name">
-            <input class="form__field" type="text" id="appointment-name" name="appointment-name" placeholder="Имя">
-          </label>
-        </p>
-        <p class="form__field-grouph">
-          <label class="form__title-modal-form" for="modal-phone">
-            <input class="form__field" type="tel" id="modal-phone" name="modal-phone" placeholder="Телефон">
-          </label>
-        </p>
-        <textarea class="form__field-group" placeholder="Ваш вопрос"></textarea>
-        <button class="form__button button" type="submit">
-          <span>Задать вопрос</span>
-        </button>
-        <label class="form__personal-data">Я согласен на обработку персональных данных
-          <input type="checkbox" name="personal-data" value="personal-data">
-          <span class="form__checkmark"></span>
-        </label>
-      </form>
+      <div class="form__wrapper">
+        <div class="form__feedback">
+          <h2 class="form__title">Остались вопросы? Задайте их нам!</h2>
+          <span class="form__intro">Мы проконсультируем Вас бесплатно</span>
+          <form class="form__auth" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="form__field-group">
+              <label class="visually-hidden" for="appointment-name"></label>
+              <input class="form__field" type="text" id="appointment-name" name="appointment-name" placeholder="Имя">
+            </p>
+            <p class="form__field-group">
+              <label class="visually-hidden" for="modal-phone"></label>
+              <input class="form__field" type="tel" id="modal-phone" name="modal-phone" placeholder="Телефон"
+                minlength="20" title="Используйте числовой формат" required="">
+            </p>
+            <textarea class="form__field-textarea" placeholder="Ваш вопрос"></textarea>
+            <button class="form__button button" type="submit">Задать вопрос</button>
+            <div class="form__personal-wrapper">
+              <input class="visually-hidden" type="checkbox" name="personal-data" value="personal-data"
+                id="personal-data" required="">
+              <label class="form__personal-data" for="personal-data">Я согласен на обработку персональных данных</label>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 
