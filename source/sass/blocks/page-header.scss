@@ -27,10 +27,6 @@
   color: #f2f5f7;
 }
 
-.page-header--home {
-  min-height: 543px;
-}
-
 .page-header__logo {
   display: flex;
   width: 215px;
@@ -38,6 +34,16 @@
   cursor: pointer;
 }
 
+.page-header__logo img {
+  @media (max-width: $mobile-width) {
+    margin-top: 8px;
+}
+}
+
 .page-header__logo-descript {
   margin-left: 15px;
+
+  @media (max-width: $mobile-width) {
+      display: none;
+  }
 }

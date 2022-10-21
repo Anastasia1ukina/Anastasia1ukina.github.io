@@ -8,17 +8,22 @@
   top: 0;
   left: 0;
   right: 0;
+
+  @media (max-width: $tablet-width) {
+    min-height: 100px;
+    position: absolute;
+    min-height: 100px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: auto;
+    min-height: 70px;
+  }
 }
 
 .main-nav__icon-user {
   position: absolute;
   right: 265px;
-  top: 32px;
-}
-
-.main-nav__icon-cart {
-  position: absolute;
-  right: 133px;
   top: 32px;
 }
 
@@ -38,6 +43,10 @@
   border: 1px solid #f2f5f6;
   border-radius: 3px;
   cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__toggle span {
@@ -60,16 +69,40 @@
   line-height: 18px;
   color: #f2f5f7;
   padding-left: 35px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__email {
   top: 39px;
   position: absolute;
+
+  @media (max-width: $tablet-width) {
+    top: 30px;
+    right: 140px;
+  }
+
+  @media (max-width: $mobile-width) {
+    top: 20px;
+    right: 105px;
+  }
 }
 
 .main-nav__icon-phone-call {
   top: 39px;
   position: absolute;
+
+  @media (max-width: $tablet-width) {
+    top: 30px;
+    right: 80px;
+  }
+
+  @media (max-width: $mobile-width) {
+    top: 20px;
+    right: 45px;
+  }
 }
 
 .main-mav__item {

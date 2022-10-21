@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-
+import {maskPhone} from './modules/modals/mask-phone';
+import './modules/modals/popap-form';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -9,6 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  maskPhone();
 
   // Modules
   // ---------------------------------

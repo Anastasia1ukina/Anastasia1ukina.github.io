@@ -7,7 +7,15 @@
   @media (min-width: $desktop-min) and (max-width: $desktop-max) {
     max-width: 1220px;
     width: 95%;
-}
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 86.9%;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 50px 0 50px 0;
+  }
 }
 
 .benefits__list {
@@ -27,6 +35,14 @@
   display: block;
   position: absolute;
   left: 0;
+
+  @media (max-width: $tablet-width) {
+    height: 360px;
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 340px;
+  }
 }
 
 .benefits__item-title {
@@ -37,6 +53,14 @@
   color: #00b2ff;
   margin: 20px 0 15px 0;
 
+  @media (max-width: $tablet-width) {
+    line-height: 34px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .benefits__item {
@@ -51,7 +75,23 @@
   @media (min-width: $desktop-min) and (max-width: $desktop-max) {
     width: 47%;
     padding: 0 4% 0;
-}
+  }
+
+  @media (min-width: $mobile-resize) and (max-width: $tablet-width) {
+    min-height: auto;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 47.5%;
+    height: 360px;
+    padding-right: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 47.5%;
+    height: 340px;
+    padding-right: 30px;
+  }
 }
 
 .benefits__item p {
@@ -62,8 +102,17 @@
   line-height: 22px;
   color: #041827;
   margin: 0;
+
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 .benefits__icon {
   margin-top: 40px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 30px;
+  }
 }

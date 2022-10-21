@@ -10,19 +10,57 @@
   &--classmates {
     left: 15px;
     top: 77px;
+
+    @media (max-width: $tablet-width) {
+      left: 580px;
+      top: 60px;
+    }
+
+    @media (max-width: $mobile-width) {
+      left: 0;
+      top: 60px;
+    }
   }
 
   &--vk {
     left: 70px;
     top: 77px;
+
+    @media (max-width: $tablet-width) {
+      left: 635px;
+      top: 60px;
+    }
+
+    @media (max-width: $mobile-width) {
+      left: 0;
+      top: 60px;
+    }
   }
 
   &--pinterest {
     left: 125px;
     top: 77px;
+
+    @media (max-width: $tablet-width) {
+      left: 690px;
+      top: 60px;
+    }
+
+    @media (max-width: $mobile-width) {
+      left: 0;
+      top: 60px;
+    }
   }
 }
 
 .social {
   position: relative;
+
+  @media (max-width: $tablet-width) {
+    position: inherit;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-right: 0;
+  }
 }

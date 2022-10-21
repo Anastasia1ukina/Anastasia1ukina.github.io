@@ -8,14 +8,24 @@
   @media (min-width: $desktop-min) and (max-width: $desktop-max) {
     max-width: 1220px;
     width: 95%;
-}
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 86.9%;
+    padding-top: 60px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 86px;
+    padding-top: 50px;
+  }
 }
 
 .product {
   background-color: #041827;
 }
 
-.product__title {
+.product__title-default {
   margin: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -24,6 +34,30 @@
   line-height: 51px;
   color: #ffffff;
   padding-bottom: 50px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.product__title-mobile {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+    margin: 0;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 39px;
+    padding-bottom: 40px;
+    color: #ffffff;
+  }
 }
 
 .product__list {
@@ -33,6 +67,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    column-gap: 7%;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 .product__card-title {
@@ -51,24 +94,34 @@
 
 .product__card {
   position: relative;
-  height: 650px;
-  width: 350px;
 
   @media (min-width: $desktop-min) and (max-width: $desktop-max) {
     width: 28.5%;
-    height: 100%;
-}
+  }
 }
 
 .product__card::after {
   content: "";
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    border-top-left-radius: 3px;
-    background: #00b2ff url("../img/svg/arrow.svg") center no-repeat;
-    pointer-events: none;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top-left-radius: 3px;
+  background: #00b2ff url("../img/svg/arrow.svg") center no-repeat;
+  pointer-events: none;
+
+  @media (max-width: $mobile-width) {
+    height: 40px;
+    width: 40px;
+    background: #00b2ff url("../img/svg/arrow-mobile.svg") center no-repeat;
+  }
 }
 
+.product__card-img img {
+  @media (max-width: $tablet-width) {
+    height: 250px;
+    vertical-align: bottom;
+    object-fit: cover;
+  }
+}

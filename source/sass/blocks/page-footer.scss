@@ -1,6 +1,10 @@
 .page-footer {
   background-color: #041827;
   flex: 0 0 auto;
+
+  @media (max-width: $tablet-width) {
+    position: relative;
+  }
 }
 
 .page-footer__wrapper {
@@ -57,8 +61,18 @@
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 20px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 35px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px 0;
+  }
 }
 
 .page-footer__list {
@@ -73,6 +87,18 @@
   @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
     column-gap: 40px;
   }
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.page-footer__list li {
+  margin-bottom: 10px;
 }
 
 .page-footer__link {
@@ -92,6 +118,10 @@
   flex-direction: column;
   flex-wrap: wrap;
   gap: 10px;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .page-footer__link-contacts {
@@ -115,6 +145,17 @@
 
 .page-footer__wrapper-important-list {
   display: flex;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.page-footer__wrapper-important-list h4 {
+  @media (max-width: $mobile-width) {
+    padding-right: 41px;
+    padding-left: 24px;
+  }
 }
 
 .page-footer__online-store {
@@ -122,6 +163,27 @@
 
   @media (min-width: $desktop-min) and (max-width: $desktop-resize) {
     margin-right: 40px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 130px;
+  }
+
+  @media (min-width: $tablet-resize) and (max-width: $tablet-width) {
+    margin-right: auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0;
+    border-top: 1px solid #f8fdffb3;
+    border-bottom: 1px solid #f8fdffb3;
+  }
+}
+
+.page-footer__contacts {
+  @media (max-width: $mobile-width) {
+    margin: 0;
+    border-bottom: 1px solid #f8fdffb3;
   }
 }
 

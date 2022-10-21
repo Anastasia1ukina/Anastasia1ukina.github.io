@@ -42,7 +42,7 @@ a {
 img,
 video {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -85,6 +85,7 @@ select {
 
 // ie11 X removal
 input {
+
   &::-ms-clear,
   &::-ms-reveal {
     display: none;
@@ -129,4 +130,14 @@ button,
 [type="reset"],
 [type="submit"] {
   appearance: none;
+}
+
+textarea, input[type="text"], [type="tel"] {
+  background-color: #04142726;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
 }
