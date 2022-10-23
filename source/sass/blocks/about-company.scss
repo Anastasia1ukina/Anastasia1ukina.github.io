@@ -9,7 +9,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    width: 86.9%;
+    width: 87%;
   }
 }
 
@@ -23,7 +23,6 @@
 
   @media (max-width: $mobile-width) {
     padding: 0 0 80px 0;
-
   }
 }
 
@@ -36,8 +35,7 @@
   top: 0;
   left: 0;
 
-  @media (max-resolution: $retina-dpi),
-  (max-resolution: $retina-dppx) {
+  @media (max-resolution: $retina-dpi), (max-resolution: $retina-dppx) {
     background: url("../img/2022@2x.png") no-repeat;
     background-size: 150px auto;
   }
@@ -85,7 +83,7 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #00B2FF;
+  color: #00b2ff;
   padding: 0;
   cursor: pointer;
 
@@ -129,4 +127,8 @@
 .about-company__description-more {
   display: none;
   margin: 0;
+
+  &--active {
+    display: block;
+  }
 }

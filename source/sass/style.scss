@@ -1,9 +1,4 @@
-// Vendor
-// ---------------------------------
-
 @import "vendor/normalize";
-// Swiper 7.4.1
-// @import "vendor/swiper";
 
 // Global
 @import "variables";
@@ -11,7 +6,6 @@
 @import "global/reboot";
 
 // Blocks
-@import "blocks/btn";
 @import "blocks/promo";
 @import "blocks/page-header";
 @import "blocks/main-nav";
@@ -22,8 +16,7 @@
 @import "blocks/social";
 @import "blocks/form";
 @import "blocks/popap-form";
-
-// ---------------------------------
+@import "blocks/accordeon";
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
 
@@ -43,30 +36,3 @@
 
 // для любых transition обязательно указывайте transition-property
 // transition: $trans-default ❌ ---> transition: color $trans-default ✅
-
-// Globals
-// @import "./global/variables.scss";
-// @import "./global/global.scss";
-// @import "./global/fonts.scss";
-// @import "./global/button.scss";
-
-// // Components
-// @import "./components/page-header.scss";
-// @import "./components/promo.scss";
-// @import "./components/program.scss";
-// @import "./components/work.scss";
-// @import "./components/live-example.scss";
-// @import "./components/advantages.scss";
-// @import "./components/slider.scss";
-// @import "./components/location.scss";
-// @import "./components/page-footer.scss";
-// @import "./components/copyright.scss";
-// @import "./components/form-title.scss";
-// @import "./components/form.scss";
-// @import "./components/social.scss";
-// @import "./components/product.scss";
-// @import "./components/additional-goods.scss";
-// @import "./components/present.scss";
-// @import "./components/main-nav.scss";
-// @import "./components/site-list.scss";
-// @import "./components/mini-description.scss"

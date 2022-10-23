@@ -85,7 +85,6 @@ select {
 
 // ie11 X removal
 input {
-
   &::-ms-clear,
   &::-ms-reveal {
     display: none;
@@ -132,7 +131,9 @@ button,
   appearance: none;
 }
 
-textarea, input[type="text"], [type="tel"] {
+textarea,
+input[type="text"],
+[type="tel"] {
   background-color: #04142726;
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;

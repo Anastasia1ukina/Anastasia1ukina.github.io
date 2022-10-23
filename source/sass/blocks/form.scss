@@ -1,12 +1,11 @@
 .form {
-  background-color: #00B3FF;
+  background-color: #00b3ff;
   background-image: url("../img/bg-form.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  @media (max-resolution: $retina-dpi),
-  (max-resolution: $retina-dppx) {
+  @media (max-resolution: $retina-dpi), (max-resolution: $retina-dppx) {
     background-image: url("../img/bg-form@2x.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -30,7 +29,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    width: 86.9%;
+    width: 87%;
   }
 }
 
@@ -40,7 +39,7 @@
 
   @media (min-width: $desktop-min) and (max-width: $desktop-max) {
     padding-left: 51.22%;
-    padding-right: .82%;
+    padding-right: 0.82%;
   }
 
   @media (max-width: $tablet-width) {
@@ -63,8 +62,7 @@
   left: 0;
   top: 246px;
 
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/paper-airplane@2x.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -148,6 +146,7 @@
   @media (max-width: $tablet-width) {
     width: 100%;
     column-gap: 27px;
+    row-gap: 30px;
   }
 
   @media (max-width: $mobile-width) {
@@ -162,6 +161,7 @@
   border: none;
   border-radius: 3px;
   background-color: #04142726;
+  outline: none;
 
   @media (min-width: $desktop-min) and (max-width: $desktop-max) {
     width: 100%;
@@ -188,9 +188,14 @@
   padding: 15px;
   border: none;
   background-color: #04142726;
+  outline: none;
 
   @media (max-width: $tablet-width) {
     width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 180px;
   }
 }
 
@@ -264,11 +269,11 @@
   width: 15px;
   height: 15px;
   border-radius: 2px;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   left: 0;
   top: 3px;
 }
 
-.form__personal-wrapper input:checked+label::before {
+.form__personal-wrapper input:checked + label::before {
   background: url("../img/svg/check.svg") center no-repeat;
 }

@@ -42,7 +42,6 @@
 }
 
 .popap-form__wrapper p {
-
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -65,6 +64,7 @@
   line-height: 21px;
   color: #ffffff;
   border-radius: 3px;
+  outline: none;
 }
 
 .popap-form__wrapper textarea {
@@ -79,6 +79,7 @@
   color: #ffffff;
   border-radius: 3px;
   resize: none;
+  outline: none;
 }
 
 .popap-form__wrapper input::placeholder,
@@ -132,15 +133,10 @@
   }
 }
 
-.popap-form__checkbox input:checked+label {
+.popap-form__checkbox input:checked + label {
   &::before {
     background: url("../img/svg/check.svg") center no-repeat;
   }
-}
-
-.popap-form__checkbox input:focus+label {
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: 7px;
 }
 
 .popap-form__button-close {

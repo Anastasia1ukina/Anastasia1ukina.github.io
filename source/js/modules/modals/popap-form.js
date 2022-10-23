@@ -1,6 +1,6 @@
 const orderButton = document.querySelector('.main-nav__toggle');
 const modalCall = document.querySelector('.popap-form');
-const pageBody = document.querySelector('body');
+const pageBody = document.getElementsByTagName('body');
 const buttonCloseModal = document.querySelector('.popap-form__button-close');
 const nameInput = document.querySelector('#name-call');
 const approvalInput = document.querySelector('#personal-call');
