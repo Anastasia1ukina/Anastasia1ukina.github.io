@@ -100,6 +100,14 @@
   }
 }
 
+.product__card :hover {
+  opacity: 0.9;
+}
+
+.product__card:active {
+  opacity: 0.7;
+}
+
 .product__card::after {
   content: "";
   width: 60px;

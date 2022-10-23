@@ -94,6 +94,16 @@
   }
 }
 
+.benefits__item:hover, .benefits__item:hover p, .benefits__item:hover h3, .benefits__item:hover svg{
+  background-color: #00b2ff;
+  color: #f2f5f6;
+  fill: #f2f5f6;
+}
+
+.benefits__item:active {
+  opacity: 0.9;
+}
+
 .benefits__item p {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;

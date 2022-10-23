@@ -30,7 +30,7 @@ if (modalCall) {
   });
   modalCall.addEventListener('click', (evt) => {
     const target = evt.target;
-    if (!target.closest('.popap-form__container')) {
+    if (!target.closest('.popap-form__wrapper')) {
       modalCall.classList.remove('popap-form--open');
       pageBody.classList.remove('body--opened-modal');
     }

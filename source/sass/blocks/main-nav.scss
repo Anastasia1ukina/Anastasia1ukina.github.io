@@ -11,7 +11,6 @@
 
   @media (max-width: $tablet-width) {
     min-height: 100px;
-    position: absolute;
     min-height: 100px;
   }
 
@@ -47,6 +46,14 @@
   @media (max-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-nav__toggle:hover {
+  opacity: 0.7;
+}
+
+.main-nav__toggle:active {
+  opacity: 0.5;
 }
 
 .main-nav__toggle span {
@@ -109,6 +116,14 @@
   &--contacts {
     margin-top: 5px;
   }
+}
+
+.main-mav__item:hover {
+  opacity: 0.7;
+}
+
+.main-mav__item:active {
+  opacity: 0.5;
 }
 
 .main-nav__container {
