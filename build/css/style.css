@@ -589,7 +589,6 @@ input[type="text"],
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 880px;
-  margin-top: 20px;
   padding: 305px 0 280px;
   background-color: #083a6d;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#19202440), to(#19202440)), url("../img/bg-header-desktop.jpg");
@@ -617,7 +616,7 @@ input[type="text"],
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: #f2f5f7;
-  padding-bottom: 40px;
+  padding-bottom: 26px;
 }
 
 .promo__description {
@@ -688,6 +687,7 @@ input[type="text"],
   font-size: 12px;
   line-height: 14px;
   color: #ffffffb3;
+  vertical-align: baseline;
 }
 
 .page-header__logo h2 {
@@ -902,6 +902,7 @@ input[type="text"],
   line-height: 22px;
   color: #041827;
   margin: 0;
+  width: 510px;
 }
 
 .benefits__icon {
@@ -937,7 +938,7 @@ input[type="text"],
   font-size: 36px;
   line-height: 51px;
   color: #041827;
-  margin: 0 0 15px 0;
+  margin: 0 0 8px 0;
 }
 
 .about-company p {
@@ -1106,10 +1107,6 @@ input[type="text"],
   color: #f8fdffb3;
 }
 
-.page-footer__logo {
-  cursor: pointer;
-}
-
 .page-footer__logo:hover {
   opacity: 0.7;
 }
@@ -1119,6 +1116,7 @@ input[type="text"],
 }
 
 .page-footer__logo {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1264,7 +1262,8 @@ input[type="text"],
 }
 
 .social__svg {
-  margin-right: 15px;
+  margin-left: 18px;
+  margin-top: 8px;
 }
 
 .social__svg:hover {
@@ -1330,7 +1329,7 @@ input[type="text"],
   margin: 0;
 }
 
-.form__auth {
+.form__auth form {
   width: 580px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1765,6 +1764,7 @@ input[type="text"],
 @media (max-width: 1023px) {
   .promo {
     min-height: 640px;
+    max-height: 640px;
     padding: 180px 0 205px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#192024b3), to(#19202469)), url("../img/bg-header-tablet.jpg");
     background-image: -o-linear-gradient(#192024b3 0%, #19202469 100%), url("../img/bg-header-tablet.jpg");
@@ -1779,14 +1779,9 @@ input[type="text"],
   }
 
   .promo__title {
-    padding-bottom: 20px;
+    padding-bottom: 0;
     line-height: 75px;
     font-size: 64px;
-  }
-
-  .promo__title {
-    font-size: 36px;
-    line-height: 42px;
   }
 
   .promo__button {
@@ -1821,6 +1816,7 @@ input[type="text"],
 
   .benefits {
     width: 87%;
+    padding: 80px 0 80px;
   }
 
   .benefits__line {
@@ -1829,12 +1825,19 @@ input[type="text"],
 
   .benefits__item-title {
     line-height: 34px;
+    margin: 9px 0 6px;
   }
 
   .benefits__item {
     width: 47.5%;
     height: 360px;
     padding-right: 30px;
+  }
+
+  .benefits__item p {
+    font-size: 14px;
+    line-height: 19px;
+    width: auto;
   }
 
   .about-company {
@@ -1845,13 +1848,18 @@ input[type="text"],
     padding: 0 0 80px 175px;
   }
 
+  .about-company__description-mobile {
+    margin: 0 0 8px 0;
+  }
+
   .product__wrapper {
     width: 87%;
     padding-top: 60px;
+    padding-bottom: 80px;
   }
 
   .product__title-default {
-    padding-top: 50px;
+    padding-bottom: 26px;
   }
 
   .product__list {
@@ -1860,6 +1868,10 @@ input[type="text"],
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 30px;
+  }
+
+  .product__card-title--montage {
+    width: 185px;
   }
 
   .product__card-img img {
@@ -1907,6 +1919,11 @@ input[type="text"],
     max-width: 357px;
   }
 
+  .social__svg {
+    margin-left: 21px;
+    margin-top: 0;
+  }
+
   .form {
     background: 0 0;
     background-color: #00b3ff;
@@ -1926,26 +1943,44 @@ input[type="text"],
 
   .form__title {
     font-size: 36px;
+    margin: 0 0 7px 0;
   }
 
   .form__field-group {
     width: 47.76%;
   }
 
-  .form__auth {
+  .form__auth form {
     width: 100%;
     -webkit-column-gap: 27px;
     -moz-column-gap: 27px;
     column-gap: 27px;
-    row-gap: 30px;
+    row-gap: 22px;
+    margin-top: 24px;
   }
 
   .form__field {
     width: 100%;
+    padding: 19px;
   }
 
   .form__field-textarea {
     width: 100%;
+    padding: 29px 15px;
+  }
+
+  .form__button {
+    margin-top: 14px;
+  }
+
+  .form__personal-wrapper {
+    margin-left: 58px;
+    margin-top: 13px;
+  }
+
+  .form__personal-wrapper {
+    margin-left: 9px;
+    margin-top: -11px;
   }
 }
 
@@ -1964,13 +1999,20 @@ input[type="text"],
   .promo {
     min-height: 560px;
     max-height: 560px;
-    padding: 174px 0 190px;
+    padding: 149px 0 190px;
+  }
+
+  .promo__title {
+    font-size: 36px;
+    line-height: 42px;
+    padding-bottom: 8px;
   }
 
   .promo__description {
     width: auto;
     font-size: 14px;
     line-height: 22px;
+    padding-bottom: 46px;
   }
 
   .promo__button {
@@ -2022,7 +2064,7 @@ input[type="text"],
   }
 
   .benefits {
-    padding: 50px 0 50px 0;
+    padding: 33px 0;
   }
 
   .benefits__line {
@@ -2032,12 +2074,14 @@ input[type="text"],
   .benefits__item-title {
     font-size: 20px;
     line-height: 28px;
+    margin: 5px 0 6px;
   }
 
   .benefits__item {
     width: 47.5%;
     height: 340px;
     padding-right: 30px;
+    padding-left: 33px;
   }
 
   .benefits__item p {
@@ -2046,7 +2090,7 @@ input[type="text"],
   }
 
   .benefits__icon {
-    margin-top: 30px;
+    margin-top: 50px;
   }
 
   .about-company__wrapper {
@@ -2060,6 +2104,7 @@ input[type="text"],
   .about-company__title {
     font-size: 28px;
     line-height: 39px;
+    margin: 0 0 13px 0;
   }
 
   .about-company p {
@@ -2067,8 +2112,17 @@ input[type="text"],
     line-height: 19px;
   }
 
+  .about-company__button {
+    width: 161px;
+    height: 33px;
+  }
+
+  .about-company__description-intro {
+    margin: 0 0 18px 0;
+  }
+
   .about-company__description {
-    margin: 0 0 20px 0;
+    margin: 0 0 14px 0;
   }
 
   .about-company__description-mobile {
@@ -2092,8 +2146,22 @@ input[type="text"],
     font-weight: 400;
     font-size: 28px;
     line-height: 39px;
-    padding-bottom: 40px;
+    padding-bottom: 27px;
     color: #ffffff;
+  }
+
+  .product__card-title {
+    font-size: 18px;
+    left: -5px;
+    top: 27px;
+  }
+
+  .product__card-title--montage {
+    width: 164px;
+  }
+
+  .product__card-title--set {
+    width: 180px;
   }
 
   .product__card::after {
@@ -2182,6 +2250,11 @@ input[type="text"],
     font-size: 14px;
   }
 
+  .social__svg--classmates {
+    margin-left: 7px;
+    margin-top: 2px;
+  }
+
   .form__feedback {
     padding: 50px 0 90px;
   }
@@ -2200,17 +2273,21 @@ input[type="text"],
     width: 100%;
   }
 
-  .form__auth {
-    display: -ms-grid;
-    display: grid;
+  .form__auth form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 45px;
   }
 
   .form__field-textarea {
     height: 180px;
+    padding: 19px 18px;
   }
 
   .form__button {
     width: 100%;
+    margin-top: 8px;
   }
 
   .accordeon__title {
@@ -2327,7 +2404,7 @@ input[type="text"],
     width: 47.3%;
   }
 
-  .form__auth {
+  .form__auth form {
     width: 100%;
     -webkit-column-gap: 5.17%;
     -moz-column-gap: 5.17%;

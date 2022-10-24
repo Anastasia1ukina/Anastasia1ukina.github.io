@@ -13,6 +13,7 @@
   @media (max-width: $tablet-width) {
     width: 87%;
     padding-top: 60px;
+    padding-bottom: 80px;
   }
 
   @media (max-width: $mobile-width) {
@@ -36,7 +37,7 @@
   padding-bottom: 50px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 50px;
+    padding-bottom: 26px;
   }
 
   @media (max-width: $mobile-width) {
@@ -55,7 +56,7 @@
     font-weight: 400;
     font-size: 28px;
     line-height: 39px;
-    padding-bottom: 40px;
+    padding-bottom: 27px;
     color: #ffffff;
   }
 }
@@ -90,6 +91,26 @@
   width: 210px;
   top: 50px;
   position: absolute;
+
+  @media (max-width: $tablet-width) {
+    &--montage {
+      width: 185px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 18px;
+    left: -5px;
+    top: 27px;
+
+    &--montage {
+      width: 164px;
+    }
+
+    &--set {
+      width: 180px;
+    }
+  }
 }
 
 .product__card {

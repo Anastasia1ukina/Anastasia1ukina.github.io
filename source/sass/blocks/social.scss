@@ -5,7 +5,20 @@
 }
 
 .social__svg {
-  margin-right: 15px;
+  margin-left: 18px;
+  margin-top: 8px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 21px;
+    margin-top: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    &--classmates {
+      margin-left: 7px;
+      margin-top: 2px;
+    }
+  }
 }
 
 .social__svg:hover {

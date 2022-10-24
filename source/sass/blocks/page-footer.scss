@@ -29,10 +29,6 @@
   color: #f8fdffb3;
 }
 
-.page-footer__logo {
-  cursor: pointer;
-}
-
 .page-footer__logo:hover {
   opacity: 0.7;
 }
@@ -42,6 +38,7 @@
 }
 
 .page-footer__logo {
+  cursor: pointer;
   display: flex;
   width: 215px;
   height: 55px;
