@@ -710,8 +710,8 @@ input[type="text"],
   cursor: pointer;
 }
 
-.page-header__logo-descript {
-  margin-left: 15px;
+.page-header__logo img {
+  margin-top: -5px;
 }
 
 .page-footer__contacts-item {
@@ -1123,10 +1123,6 @@ input[type="text"],
   display: flex;
   width: 215px;
   height: 55px;
-}
-
-.page-footer__logo-descript {
-  margin-left: 15px;
 }
 
 .page-footer__logo-text {
@@ -2043,10 +2039,6 @@ input[type="text"],
 
   .page-header__logo img {
     margin-top: 8px;
-  }
-
-  .page-header__logo-descript {
-    display: none;
   }
 
   .main-nav {
