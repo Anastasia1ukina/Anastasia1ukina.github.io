@@ -157,7 +157,7 @@
   }
 }
 
-.form__field {
+.form__field-group input {
   padding: 15px;
   width: 275px;
   height: 50px;
@@ -176,7 +176,7 @@
   }
 }
 
-.form__field::placeholder {
+.form__field-group input::placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -186,6 +186,10 @@
 }
 
 .form__field-textarea {
+  width: 100%;
+}
+
+.form__field-textarea textarea {
   height: 155px;
   width: 580px;
   border-radius: 3px;
@@ -193,6 +197,10 @@
   border: none;
   background-color: #04142726;
   outline: none;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    width: 100%;
+  }
 
   @media (max-width: $tablet-width) {
     width: 100%;
@@ -205,7 +213,7 @@
   }
 }
 
-.form__field-textarea::placeholder {
+.form__field-textarea textarea::placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;

@@ -1,4 +1,4 @@
-.popap-form {
+.popup-form {
   display: none;
   position: fixed;
   top: 0;
@@ -14,7 +14,7 @@
   }
 }
 
-.popap-form__wrapper {
+.popup-form__wrapper {
   position: absolute;
   width: 500px;
   min-height: 610px;
@@ -31,7 +31,7 @@
   }
 }
 
-.popap-form__wrapper h2 {
+.popup-form__wrapper h2 {
   font-size: 30px;
   line-height: 42px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -41,7 +41,7 @@
   margin-bottom: 3px;
 }
 
-.popap-form__wrapper p {
+.popup-form__wrapper p {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -52,7 +52,7 @@
   margin-bottom: 40px;
 }
 
-.popap-form__wrapper input {
+.popup-form__wrapper input {
   width: 100%;
   margin-bottom: 19px;
   min-height: 50px;
@@ -67,7 +67,7 @@
   outline: none;
 }
 
-.popap-form__wrapper textarea {
+.popup-form__wrapper textarea {
   width: 100%;
   margin-bottom: 19px;
   min-height: 155px;
@@ -82,12 +82,12 @@
   outline: none;
 }
 
-.popap-form__wrapper input::placeholder,
-.popap-form__wrapper textarea::placeholder {
+.popup-form__wrapper input::placeholder,
+.popup-form__wrapper textarea::placeholder {
   color: #ffffff;
 }
 
-.popap-form__button {
+.popup-form__button {
   width: 100%;
   margin-bottom: 16px;
   padding-top: 6px;
@@ -113,7 +113,7 @@
   }
 }
 
-.popap-form__checkbox label {
+.popup-form__checkbox label {
   position: relative;
   font-size: 14px;
   line-height: 16px;
@@ -133,13 +133,13 @@
   }
 }
 
-.popap-form__checkbox input:checked + label {
+.popup-form__checkbox input:checked + label {
   &::before {
     background: url("../img/svg/check.svg") center no-repeat;
   }
 }
 
-.popap-form__button-close {
+.popup-form__button-close {
   position: absolute;
   width: 40px;
   height: 40px;

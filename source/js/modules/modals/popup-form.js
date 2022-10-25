@@ -1,34 +1,34 @@
 const orderButton = document.querySelector('.main-nav__toggle');
-const popapForm = document.querySelector('.popap-form');
+const popupForm = document.querySelector('.popup-form');
 const pageBody = document.querySelector('body');
-const buttonClosePopap = document.querySelector('.popap-form__button-close');
+const buttonClosepopup = document.querySelector('.popup-form__button-close');
 const nameInput = document.querySelector('#name-call');
 
-if (popapForm) {
+if (popupForm) {
   orderButton.addEventListener('click', (evt) => {
     evt.preventDefault();
-    popapForm.classList.toggle('popap-form--open');
+    popupForm.classList.toggle('popup-form--open');
     pageBody.classList.toggle('body--opened-modal');
     nameInput.focus();
   });
-  buttonClosePopap.addEventListener('click', () => {
-    popapForm.classList.toggle('popap-form--open');
+  buttonClosepopup.addEventListener('click', () => {
+    popupForm.classList.toggle('popup-form--open');
     pageBody.classList.toggle('body--opened-modal');
   });
   document.addEventListener('keydown', (evt) => {
     if (evt.key === 'Escape') {
-      if (popapForm.classList.contains('popap-form--open')) {
-        popapForm.classList.remove('popap-form--open');
+      if (popupForm.classList.contains('popup-form--open')) {
+        popupForm.classList.remove('popup-form--open');
       }
       if (pageBody.classList.contains('body--opened-modal')) {
         pageBody.classList.remove('body--opened-modal');
       }
     }
   });
-  popapForm.addEventListener('click', (evt) => {
+  popupForm.addEventListener('click', (evt) => {
     const target = evt.target;
-    if (!target.closest('.popap-form__wrapper')) {
-      popapForm.classList.remove('popap-form--open');
+    if (!target.closest('.popup-form__wrapper')) {
+      popupForm.classList.remove('popup-form--open');
       pageBody.classList.remove('body--opened-modal');
     }
   });

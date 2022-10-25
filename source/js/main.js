@@ -1,10 +1,10 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {maskPhone} from './modules/modals/mask-phone';
-import './modules/modals/popap-form';
+import './modules/modals/popup-form';
 import './modules/modals/about-company';
 import './modules/modals/scroll';
-import './modules/modals/accordeon';
+import './modules/modals/accordion';
 import './modules/modals/form';
 // ---------------------------------
 

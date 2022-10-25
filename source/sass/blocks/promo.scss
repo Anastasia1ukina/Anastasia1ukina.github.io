@@ -114,6 +114,7 @@
   min-width: 410px;
   display: inline-block;
   text-align: center;
+  vertical-align: baseline;
 
   @media (max-width: $tablet-width) {
     margin-left: 45px;
