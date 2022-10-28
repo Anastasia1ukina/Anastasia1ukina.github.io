@@ -52,12 +52,16 @@
   font-size: 36px;
   line-height: 51px;
   color: #041827;
-  margin: 0 0 8px 0;
+  margin: 0 0 12px 0;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 9px 0;
+  }
 
   @media (max-width: $mobile-width) {
     font-size: 28px;
     line-height: 39px;
-    margin: 0 0 13px 0;
+    margin: 0 0 13px 4px;
   }
 }
 
@@ -87,15 +91,17 @@
   color: #00b2ff;
   padding: 0;
   cursor: pointer;
+  user-select: none;
 
   background-color: #ffffff;
   border: 1px solid #00b2ff;
   width: 180px;
-  height: 45px;
+  min-height: 45px;
 
   @media (max-width: $mobile-width) {
     width: 161px;
-    height: 33px;
+    min-height: 33px;
+    margin-left: 5px;
   }
 }
 
@@ -111,10 +117,14 @@
 }
 
 .about-company__description-intro {
-  margin: 0 0 25px 0;
+  margin: 0 0 21px 0;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 19px 0;
+  }
 
   @media (max-width: $mobile-width) {
-    margin: 0 0 18px 0;
+    margin: 0 0 18px 4px;
   }
 }
 
@@ -122,15 +132,15 @@
   margin: 0;
 
   @media (max-width: $mobile-width) {
-    margin: 0 0 14px 0;
+    margin: 0 0 13px 4px;
   }
 }
 
 .about-company__description-mobile {
-  margin: 0 0 34px 0;
+  margin: 0 0 39px 0;
 
   @media (max-width: $tablet-width) {
-    margin: 0 0 8px 0;
+    margin: 0 0 15px 0;
   }
 
   @media (max-width: $mobile-width) {

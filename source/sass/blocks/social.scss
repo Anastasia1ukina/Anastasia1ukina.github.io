@@ -5,17 +5,24 @@
 }
 
 .social__svg {
-  margin-left: 18px;
-  margin-top: 8px;
+  margin-left: 10px;
 
   @media (max-width: $tablet-width) {
-    margin-left: 21px;
-    margin-top: 0;
+    margin-left: 8px;
+    margin-bottom: 10px;
+
+    &--vk {
+      padding-left: 3px;
+    }
+
+    &--pinterest {
+      padding-left: 5px;
+    }
   }
 
   @media (max-width: $mobile-width) {
     &--classmates {
-      margin-left: 7px;
+      margin-left: 0;
       margin-top: 2px;
     }
   }

@@ -4,15 +4,14 @@
   min-height: 880px;
   padding: 305px 0 280px;
 
-  background-color: #083a6d;
-  background-image: linear-gradient(#19202440 0%, #19202440 100%),
-    url("../img/bg-header-desktop.jpg");
+  background-color: #041827;
+  background-image: url("../img/bg-header-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media (max-resolution: $retina-dpi), (max-resolution: $retina-dppx) {
-    background-image: linear-gradient(#19202440 0%, #19202440 100%), url("../img/bg-header-desktop@2x.jpg");
+    background-image: url("../img/bg-header-desktop@2x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -23,14 +22,13 @@
     max-height: 640px;
     padding: 180px 0 205px;
 
-    background-image: linear-gradient(#192024b3 0%, #19202469 100%),
-      url("../img/bg-header-tablet.jpg");
+    background-image: url("../img/bg-header-tablet.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     @media (max-resolution: $retina-dpi), (max-resolution: $retina-dppx) {
-      background-image: linear-gradient(#192024b3 0%, #19202469 100%), url("../img/bg-header-tablet@2x.jpg");
+      background-image: url("../img/bg-header-tablet@2x.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -70,7 +68,7 @@
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: #f2f5f7;
-  padding-bottom: 26px;
+  padding-bottom: 32px;
 
   @media (max-width: $tablet-width) {
     padding-bottom: 0;
@@ -82,6 +80,7 @@
     font-size: 36px;
     line-height: 42px;
     padding-bottom: 8px;
+    margin-left: 4px;
   }
 }
 
@@ -93,14 +92,19 @@
   font-size: 22px;
   line-height: 34px;
   color: #f2f5f7;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
   width: 640px;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 56px;
+  }
 
   @media (max-width: $mobile-width) {
     width: auto;
     font-size: 14px;
     line-height: 22px;
     padding-bottom: 46px;
+    margin-left: 2px;
   }
 }
 
@@ -115,6 +119,7 @@
   display: inline-block;
   text-align: center;
   vertical-align: baseline;
+  user-select: none;
 
   @media (max-width: $tablet-width) {
     margin-left: 45px;

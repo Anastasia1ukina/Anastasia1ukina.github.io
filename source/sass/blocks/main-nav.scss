@@ -11,6 +11,7 @@
 
   @media (max-width: $tablet-width) {
     min-height: 100px;
+    position: absolute;
   }
 
   @media (max-width: $mobile-width) {
@@ -26,21 +27,23 @@
 }
 
 .main-nav__list {
+  position: relative;
   display: flex;
   list-style-type: none;
   padding: 0;
   margin: 0 auto;
   flex-wrap: wrap;
-  justify-content: space-between;
+  column-gap: 122px;
 }
 
 .main-nav__toggle {
   width: 160px;
-  height: 40px;
+  min-height: 40px;
   background-color: #041827;
   border: 1px solid #f2f5f6;
   border-radius: 3px;
   cursor: pointer;
+  user-select: none;
 
   @media (max-width: $tablet-width) {
     display: none;
@@ -82,38 +85,61 @@
 }
 
 .main-nav__email {
-  top: 39px;
+  top: 13px;
   position: absolute;
 
   @media (max-width: $tablet-width) {
-    top: 30px;
-    right: 140px;
+    top: 8px;
+    right: 90px;
   }
 
   @media (max-width: $mobile-width) {
     top: 20px;
-    right: 105px;
+    right: 79px;
   }
 }
 
 .main-nav__icon-phone-call {
-  top: 39px;
+  top: 13px;
   position: absolute;
 
   @media (max-width: $tablet-width) {
-    top: 30px;
-    right: 80px;
+    top: 8px;
+    right: 29px;
   }
 
   @media (max-width: $mobile-width) {
     top: 20px;
-    right: 45px;
+    right: 19px;
   }
 }
 
 .main-nav__item {
   &--contacts {
-    margin-top: 5px;
+    margin-top: 9px;
+  }
+
+  &--button {
+    position: absolute;
+    right: 61px;
+    top: 2px;
+
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+      right: 0;
+    }
+  }
+}
+
+.main-nav__user {
+  margin-left: 37px;
+  margin-top: 8px;
+
+  @media (min-width: $desktop-resize) and (max-width: $desktop-max) {
+    margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    margin-left: -40px;
   }
 }
 

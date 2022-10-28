@@ -2,6 +2,7 @@
   background-color: #041827;
   flex: 0 0 auto;
   height: 100%;
+  margin-top: auto;
 }
 
 .page-footer__logo h2 {
@@ -92,6 +93,7 @@
 
 .page-footer__wrapper-logo-social {
   margin-right: 159px;
+  max-width: 215px;
   flex-shrink: 0;
 
   @media (min-width: $desktop-min) and (max-width: $desktop-max) {
@@ -105,12 +107,13 @@
     align-items: center;
     margin-right: 0;
     margin-bottom: 23px;
+    max-width: 930px;
   }
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
     align-self: center;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     padding: 0 10px;
   }
 }
@@ -121,7 +124,8 @@
   flex-shrink: 0;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 0;
+    margin-bottom: 11px;
+    margin-top: -2px;
   }
 
   @media (max-width: $mobile-width) {
@@ -133,7 +137,7 @@
 
 .page-footer__nav {
   margin-right: 125px;
-  padding-top: 8px;
+  padding-top: 5px;
 
   @media (min-width: $desktop-min) and (max-width: $desktop-max) {
     margin-right: auto;
@@ -167,6 +171,10 @@
   margin-bottom: 23px;
   letter-spacing: 0.8px;
 
+  @media (max-width: $tablet-width) {
+    margin-bottom: 21px;
+  }
+
   @media (max-width: $mobile-width) {
     margin: 0;
     padding: 0 41px 0 24px;
@@ -176,14 +184,16 @@
 .page-footer__nav-list {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  row-gap: 9px;
+  row-gap: 4px;
   column-gap: 49px;
   margin: 0;
   padding: 0;
   list-style: none;
+  flex-wrap: wrap;
 
   @media (max-width: $tablet-width) {
     grid-template-columns: auto;
+    row-gap: 5px;
   }
 
   @media (max-width: $mobile-width) {
@@ -235,7 +245,7 @@
 }
 
 .page-footer__contacts-wrapper {
-  padding-top: 8px;
+  padding-top: 5px;
 
   @media (max-width: $tablet-width) {
     width: 47%;
