@@ -27,13 +27,24 @@
 }
 
 .main-nav__list {
+  display: flex;
+}
+
+.main-nav__list ul {
   position: relative;
   display: flex;
   list-style-type: none;
-  padding: 0;
+  padding: 0 0 15px;
   margin: 0 auto;
   flex-wrap: wrap;
   column-gap: 122px;
+  min-width: 465px;
+  align-items: center;
+
+  @media (max-width: $tablet-width) {
+    min-width: auto;
+    position: inherit;
+  }
 }
 
 .main-nav__toggle {
@@ -44,6 +55,8 @@
   border-radius: 3px;
   cursor: pointer;
   user-select: none;
+  margin-right: 60px;
+  margin-top: 2px;
 
   @media (max-width: $tablet-width) {
     display: none;
@@ -89,13 +102,13 @@
   position: absolute;
 
   @media (max-width: $tablet-width) {
-    top: 8px;
-    right: 90px;
+    top: 30px;
+    right: 140px;
   }
 
   @media (max-width: $mobile-width) {
     top: 20px;
-    right: 79px;
+    right: 105px;
   }
 }
 
@@ -104,42 +117,13 @@
   position: absolute;
 
   @media (max-width: $tablet-width) {
-    top: 8px;
-    right: 29px;
+    top: 30px;
+    right: 80px;
   }
 
   @media (max-width: $mobile-width) {
     top: 20px;
-    right: 19px;
-  }
-}
-
-.main-nav__item {
-  &--contacts {
-    margin-top: 9px;
-  }
-
-  &--button {
-    position: absolute;
-    right: 61px;
-    top: 2px;
-
-    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
-      right: 0;
-    }
-  }
-}
-
-.main-nav__user {
-  margin-left: 37px;
-  margin-top: 8px;
-
-  @media (min-width: $desktop-resize) and (max-width: $desktop-max) {
-    margin-left: 20px;
-  }
-
-  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
-    margin-left: -40px;
+    right: 45px;
   }
 }
 

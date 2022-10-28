@@ -138,6 +138,7 @@
 .page-footer__nav {
   margin-right: 125px;
   padding-top: 5px;
+  max-width: 430px;
 
   @media (min-width: $desktop-min) and (max-width: $desktop-max) {
     margin-right: auto;
@@ -156,6 +157,7 @@
     border-top: 1px solid #f8fdffb3;
     border-bottom: 1px solid #f8fdffb3;
     padding: 21px 0 22px;
+    min-width: 100%;
   }
 }
 

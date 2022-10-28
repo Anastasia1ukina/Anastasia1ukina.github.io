@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {maskPhone} from './modules/modals/mask-phone';
+import './modules/modals/mask-phone';
 import './modules/modals/popup-form';
 import './modules/modals/about-company';
 import './modules/modals/scroll';
@@ -15,7 +15,6 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Modules
-  maskPhone();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

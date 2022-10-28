@@ -761,18 +761,28 @@ input[type="text"],
 }
 
 .main-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-nav__list ul {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
-  padding: 0;
+  padding: 0 0 15px;
   margin: 0 auto;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-column-gap: 122px;
   -moz-column-gap: 122px;
   column-gap: 122px;
+  min-width: 465px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .main-nav__toggle {
@@ -786,6 +796,8 @@ input[type="text"],
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  margin-right: 60px;
+  margin-top: 2px;
 }
 
 .main-nav__toggle:hover {
@@ -826,21 +838,6 @@ input[type="text"],
 .main-nav__icon-phone-call {
   top: 13px;
   position: absolute;
-}
-
-.main-nav__item--contacts {
-  margin-top: 9px;
-}
-
-.main-nav__item--button {
-  position: absolute;
-  right: 61px;
-  top: 2px;
-}
-
-.main-nav__user {
-  margin-left: 37px;
-  margin-top: 8px;
 }
 
 .main-nav__item:hover {
@@ -1201,6 +1198,7 @@ input[type="text"],
 .page-footer__nav {
   margin-right: 125px;
   padding-top: 5px;
+  max-width: 430px;
 }
 
 .page-footer__nav h4,
@@ -1564,6 +1562,10 @@ input[type="text"],
   background: url("../img/svg/check.svg") center no-repeat;
 }
 
+.form__personal-wrapper:focus {
+  outline: 1px solid #044c6a;
+}
+
 .popup-form {
   display: none;
   position: fixed;
@@ -1844,6 +1846,11 @@ input[type="text"],
     position: absolute;
   }
 
+  .main-nav__list ul {
+    min-width: auto;
+    position: inherit;
+  }
+
   .main-nav__toggle {
     display: none;
   }
@@ -1853,13 +1860,13 @@ input[type="text"],
   }
 
   .main-nav__email {
-    top: 8px;
-    right: 90px;
+    top: 30px;
+    right: 140px;
   }
 
   .main-nav__icon-phone-call {
-    top: 8px;
-    right: 29px;
+    top: 30px;
+    right: 80px;
   }
 
   .main-nav__container {
@@ -2126,7 +2133,7 @@ input[type="text"],
   }
 
   .page-header__logo img {
-    margin-top: 15px;
+    margin-top: 7px;
   }
 
   .main-nav {
@@ -2136,12 +2143,12 @@ input[type="text"],
 
   .main-nav__email {
     top: 20px;
-    right: 79px;
+    right: 105px;
   }
 
   .main-nav__icon-phone-call {
     top: 20px;
-    right: 19px;
+    right: 45px;
   }
 
   .main-nav__container {
@@ -2313,6 +2320,7 @@ input[type="text"],
     border-top: 1px solid #f8fdffb3;
     border-bottom: 1px solid #f8fdffb3;
     padding: 21px 0 22px;
+    min-width: 100%;
   }
 
   .page-footer__nav h4,
@@ -2442,14 +2450,6 @@ input[type="text"],
     width: 90%;
   }
 
-  .main-nav__item--button {
-    right: 0;
-  }
-
-  .main-nav__user {
-    margin-left: -40px;
-  }
-
   .main-nav__container {
     max-width: 1220px;
     width: 95%;
@@ -2539,12 +2539,6 @@ input[type="text"],
 
   .form__button {
     width: 44%;
-  }
-}
-
-@media (min-width: 1120px) and (max-width: 1919px) {
-  .main-nav__user {
-    margin-left: 20px;
   }
 }
 
