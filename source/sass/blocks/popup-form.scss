@@ -82,6 +82,11 @@
   outline: none;
 }
 
+.popup-form__approval {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .popup-form__wrapper input::placeholder,
 .popup-form__wrapper textarea::placeholder {
   color: #ffffff;
@@ -131,6 +136,18 @@
     left: 9px;
     top: 0;
   }
+}
+
+.popup-form__name input:focus {
+  outline: 1px solid #000000;
+}
+
+.popup-form__phone input:focus {
+  outline: 1px solid #000000;
+}
+
+.popup-form__text textarea:focus {
+  outline: 1px solid #000000;
 }
 
 .popup-form__checkbox input:checked + label {

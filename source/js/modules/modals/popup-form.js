@@ -1,8 +1,11 @@
 const orderButton = document.querySelector('.main-nav__toggle');
 const popupForm = document.querySelector('.popup-form');
 const pageBody = document.querySelector('body');
-const buttonClosepopup = document.querySelector('.popup-form__button-close');
+const buttonClosePopup = document.querySelector('.popup-form__button-close');
 const nameInput = document.querySelector('#name-call');
+const approvalInput = document.querySelector('#approval-call');
+const inputFirst = document.querySelector('#modal-input-first');
+const inputLast = document.querySelector('#modal-input-last');
 
 if (popupForm) {
   orderButton.addEventListener('click', (evt) => {
@@ -12,7 +15,7 @@ if (popupForm) {
     pageBody.classList.toggle('body--opened-modal');
     nameInput.focus();
   });
-  buttonClosepopup.addEventListener('click', () => {
+  buttonClosePopup.addEventListener('click', () => {
     popupForm.classList.toggle('popup-form--open');
     pageBody.classList.toggle('body--opened-modal');
   });
@@ -36,5 +39,11 @@ if (popupForm) {
       popupForm.classList.remove('popup-form--open');
       pageBody.classList.remove('body--opened-modal');
     }
+  });
+  inputLast.addEventListener('focus', () => {
+    buttonClosePopup.focus();
+  });
+  inputFirst.addEventListener('focus', () => {
+    approvalInput.focus();
   });
 }

@@ -39,6 +39,7 @@
   flex-wrap: wrap;
   column-gap: 122px;
   min-width: 465px;
+  max-width: 465px;
   align-items: center;
 
   @media (max-width: $tablet-width) {

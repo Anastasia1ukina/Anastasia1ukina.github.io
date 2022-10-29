@@ -1,23 +1,21 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import './modules/modals/mask-phone';
+import Inputmask from 'inputmask';
 import './modules/modals/popup-form';
 import './modules/modals/about-company';
 import './modules/modals/scroll';
 import './modules/modals/accordion';
 import './modules/modals/form';
-// ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
 
-  // Utils
-
   iosVhFix();
 
-  // Modules
+  new Inputmask({
+    mask: '+7 (999) 999 99 99',
+    showMaskOnHover: false,
+  }).mask(document.querySelectorAll('[type="tel"]'));
 
-  // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
-  // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
   });

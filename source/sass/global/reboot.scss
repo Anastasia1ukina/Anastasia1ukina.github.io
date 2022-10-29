@@ -129,6 +129,10 @@ input:matches([type="email"],
   appearance: none;
 }
 
+input:focus + label::before {
+  outline: 1px solid #000000;
+}
+
 button,
 [type="button"],
 [type="reset"],

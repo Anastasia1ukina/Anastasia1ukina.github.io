@@ -570,6 +570,10 @@ input:matches([type="email"],
   appearance: none;
 }
 
+input:focus + label::before {
+  outline: 1px solid #000000;
+}
+
 button,
 [type="button"],
 [type="reset"],
@@ -780,6 +784,7 @@ input[type="text"],
   -moz-column-gap: 122px;
   column-gap: 122px;
   min-width: 465px;
+  max-width: 465px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -898,8 +903,8 @@ input[type="text"],
 
 .benefits__item {
   position: relative;
-  width: 595px;
-  height: 300px;
+  max-width: 595px;
+  min-height: 300px;
   border: 1px solid #ebebeb;
   cursor: pointer;
   -webkit-box-flex: 1;
@@ -908,7 +913,7 @@ input[type="text"],
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   display: table;
-  padding: 0 0 20px 43px;
+  padding: 0 0 20px 45px;
 }
 
 .benefits__item:hover,
@@ -1297,6 +1302,11 @@ input[type="text"],
   margin: 0;
 }
 
+.social__link {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
 .social__svg {
   margin-left: 10px;
 }
@@ -1645,6 +1655,16 @@ input[type="text"],
   outline: none;
 }
 
+.popup-form__approval {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
 .popup-form__wrapper input::-webkit-input-placeholder,
 .popup-form__wrapper textarea::-webkit-input-placeholder {
   color: #ffffff;
@@ -1714,6 +1734,18 @@ input[type="text"],
   border-radius: 2px;
   left: 9px;
   top: 0;
+}
+
+.popup-form__name input:focus {
+  outline: 1px solid #000000;
+}
+
+.popup-form__phone input:focus {
+  outline: 1px solid #000000;
+}
+
+.popup-form__text textarea:focus {
+  outline: 1px solid #000000;
 }
 
 .popup-form__checkbox input:checked + label::before {
@@ -1888,8 +1920,8 @@ input[type="text"],
   }
 
   .benefits__item {
-    width: 47.5%;
-    height: 360px;
+    max-width: 47.5%;
+    min-height: 360px;
     padding-right: 30px;
   }
 
@@ -2176,17 +2208,18 @@ input[type="text"],
 
   .benefits__item {
     width: 47.5%;
-    height: 340px;
+    min-height: 340px;
     padding-right: 30px;
     padding-left: 30px;
+    max-width: 100%;
   }
 
   .benefits__item--detective {
-    height: 325px;
+    min-height: 325px;
   }
 
   .benefits__item--price {
-    height: 325px;
+    min-height: 325px;
   }
 
   .benefits__item p {
@@ -2461,7 +2494,7 @@ input[type="text"],
   }
 
   .benefits__item {
-    width: 47%;
+    max-width: 47%;
     padding: 0 4% 20px;
   }
 
@@ -2542,9 +2575,9 @@ input[type="text"],
   }
 }
 
-@media (min-width: 321px) and (max-width: 1023px) {
-  .benefits__item {
-    min-height: auto;
+@media (min-width: 705px) and (max-width: 767px) {
+  .benefits {
+    width: 78%;
   }
 }
 
