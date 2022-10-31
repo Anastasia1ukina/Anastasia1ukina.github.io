@@ -768,6 +768,7 @@ input[type="text"],
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 50px;
 }
 
 .main-nav__list ul {
@@ -1203,7 +1204,7 @@ input[type="text"],
 .page-footer__nav {
   margin-right: 125px;
   padding-top: 5px;
-  max-width: 430px;
+  max-width: 376px;
 }
 
 .page-footer__nav h4,
@@ -1585,7 +1586,7 @@ input[type="text"],
   right: 0;
   background-color: #03101bb3;
   z-index: 2;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .popup-form--open {
@@ -2045,6 +2046,7 @@ input[type="text"],
   .form {
     background: 0 0;
     background-color: #00b3ff;
+    background-image: none;
   }
 
   .form__wrapper {
@@ -2118,6 +2120,12 @@ input[type="text"],
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .form {
+    background-image: none;
   }
 }
 
@@ -2573,6 +2581,10 @@ input[type="text"],
   .form__button {
     width: 44%;
   }
+
+  .form__personal-data {
+    margin-left: -1px;
+  }
 }
 
 @media (min-width: 705px) and (max-width: 767px) {
@@ -2605,16 +2617,16 @@ input[type="text"],
     background: url("../img/2022@2x.png") no-repeat;
     background-size: 150px auto;
   }
+}
 
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .form {
     background-image: url("../img/bg-form@2x.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
-}
 
-@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .form__feedback::before {
     background-image: url("../img/paper-airplane@2x.png");
     background-repeat: no-repeat;

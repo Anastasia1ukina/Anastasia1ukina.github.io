@@ -5,7 +5,7 @@
   background-position: center;
   background-size: cover;
 
-  @media (max-resolution: $retina-dpi), (max-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-form@2x.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -15,6 +15,11 @@
   @media (max-width: $tablet-width) {
     background: 0 0;
     background-color: #00b3ff;
+    background-image: none;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: none;
+    }
   }
 }
 
@@ -291,6 +296,10 @@
   opacity: 0.8;
   margin-top: 23px;
   margin-left: 20px;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    margin-left: -1px;
+  }
 
   @media (max-width: $tablet-width) {
     margin-top: 32px;
