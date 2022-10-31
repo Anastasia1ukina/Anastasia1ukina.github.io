@@ -254,10 +254,10 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 2px;
   cursor: pointer;
   margin-top: 9px;
   user-select: none;
+  padding: 15px 25px 11px;
 
   @media (min-width: $desktop-min) and (max-width: $desktop-max) {
     width: 44%;
@@ -270,6 +270,7 @@
   @media (max-width: $mobile-width) {
     width: 100%;
     margin-top: 8px;
+    padding: 0;
   }
 }
 
@@ -295,19 +296,19 @@
   color: #ffffff;
   opacity: 0.8;
   margin-top: 23px;
-  margin-left: 20px;
+  margin-left: 50px;
 
   @media (min-width: $desktop-min) and (max-width: $desktop-max) {
-    margin-left: -1px;
+    margin-left: 40px;
   }
 
   @media (max-width: $tablet-width) {
     margin-top: 32px;
-    margin-left: 45px;
+    margin-left: 76px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-top: 16px;
+    margin-top: 35px;
     margin-left: -3px;
   }
 }
@@ -335,6 +336,16 @@
   border: 1px solid #ffffff;
   left: 0;
   top: 6px;
+}
+
+.form__approval {
+  display: flex;
+  flex-direction: row-reverse;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
 }
 
 .form__personal-wrapper input:checked + label::before {
