@@ -33,13 +33,13 @@
   width: 215px;
   height: 55px;
   cursor: pointer;
-}
 
-.page-header__logo img {
-  margin-top: -2px;
+  @media (max-width: $tablet-width) {
+    margin-left: -22px;
+  }
 
   @media (max-width: $mobile-width) {
-    margin-top: 7px;
+    height: 0;
   }
 }
 
