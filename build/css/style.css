@@ -724,11 +724,9 @@ input[type="text"],
 .main-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  height: 60px; }
+  display: flex; }
 
 .main-nav__list ul {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -747,8 +745,32 @@ input[type="text"],
           align-items: center; }
   @media (max-width: 1023px) {
     .main-nav__list ul {
-      min-width: auto;
-      position: inherit; } }
+      -webkit-column-gap: 40px;
+         -moz-column-gap: 40px;
+              column-gap: 40px;
+      display: contents; } }
+
+@media (max-width: 1023px) {
+  .main-nav__email {
+    position: absolute;
+    top: 30px;
+    right: 140px; } }
+
+@media (max-width: 767px) {
+  .main-nav__email {
+    top: 20px;
+    right: 105px; } }
+
+@media (max-width: 1023px) {
+  .main-nav__icon-phone-call {
+    position: absolute;
+    top: 30px;
+    right: 80px; } }
+
+@media (max-width: 767px) {
+  .main-nav__icon-phone-call {
+    top: 20px;
+    right: 45px; } }
 
 .main-nav__toggle {
   width: 160px;
@@ -784,41 +806,23 @@ input[type="text"],
   text-transform: uppercase;
   color: #f2f5f7; }
 
-.main-nav__link-user span {
+.main-nav__link-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.main-nav__link-user div {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: #f2f5f7;
-  padding-left: 35px; }
+  padding-left: 15px;
+  margin-top: 3px; }
   @media (max-width: 1023px) {
-    .main-nav__link-user span {
+    .main-nav__link-user div {
       display: none; } }
-
-.main-nav__email {
-  top: 13px;
-  position: absolute; }
-  @media (max-width: 1023px) {
-    .main-nav__email {
-      top: 30px;
-      right: 140px; } }
-  @media (max-width: 767px) {
-    .main-nav__email {
-      top: 20px;
-      right: 105px; } }
-
-.main-nav__icon-phone-call {
-  top: 13px;
-  position: absolute; }
-  @media (max-width: 1023px) {
-    .main-nav__icon-phone-call {
-      top: 30px;
-      right: 80px; } }
-  @media (max-width: 767px) {
-    .main-nav__icon-phone-call {
-      top: 20px;
-      right: 45px; } }
 
 .main-nav__item:hover {
   opacity: 0.7; }
@@ -1876,7 +1880,6 @@ input[type="text"],
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 2px;
   cursor: pointer;
   margin-top: 9px;
   -webkit-user-select: none;
