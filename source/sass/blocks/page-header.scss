@@ -35,14 +35,12 @@
   cursor: pointer;
 
   @media (max-width: $tablet-width) {
-    position: absolute;
-    left: -23px;
-    top: -10px;
+    margin-left: -19px;
   }
 
   @media (max-width: $mobile-width) {
-    height: 0;
-    top: -5px;
+    width: 50px;
+    margin-left: -22px;
   }
 }
 

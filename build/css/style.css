@@ -678,13 +678,11 @@ input[type="text"],
   cursor: pointer; }
   @media (max-width: 1023px) {
     .page-header__logo {
-      position: absolute;
-      left: -23px;
-      top: -10px; } }
+      margin-left: -19px; } }
   @media (max-width: 767px) {
     .page-header__logo {
-      height: 0;
-      top: -5px; } }
+      width: 50px;
+      margin-left: -22px; } }
 
 .page-footer__contacts-item {
   font-family: "PT Mono", "Arial", sans-serif;
@@ -711,11 +709,11 @@ input[type="text"],
     .main-nav {
       min-height: 100px;
       position: absolute;
-      padding: 20px 25px; } }
+      padding: 20px 0 25px; } }
   @media (max-width: 767px) {
     .main-nav {
       width: auto;
-      padding: 15px 20px;
+      padding: 15px 20px 0 20px;
       min-height: 70px; } }
 
 .main-nav__icon-user {
@@ -729,10 +727,9 @@ input[type="text"],
   display: flex; }
   @media (max-width: 1023px) {
     .main-nav__list {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: reverse;
-          -ms-flex-direction: row-reverse;
-              flex-direction: row-reverse; } }
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
 
 .main-nav__list ul {
   display: -webkit-box;
@@ -757,7 +754,9 @@ input[type="text"],
       -webkit-column-gap: 40px;
          -moz-column-gap: 40px;
               column-gap: 40px;
-      display: contents; } }
+      min-width: 90px;
+      max-width: 90px;
+      padding: 0 0 14px; } }
 
 .main-nav__toggle {
   width: 160px;
@@ -816,6 +815,9 @@ input[type="text"],
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center; }
+  @media (max-width: 1023px) {
+    .main-nav__item--button {
+      display: none; } }
 
 .main-nav__item:hover {
   opacity: 0.7; }
@@ -834,15 +836,7 @@ input[type="text"],
       width: 95%; } }
   @media (max-width: 1023px) {
     .main-nav__container {
-      width: 87%;
-      position: relative;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: reverse;
-          -ms-flex-direction: row-reverse;
-              flex-direction: row-reverse;
-      -ms-flex-item-align: center;
-          -ms-grid-row-align: center;
-          align-self: center; } }
+      width: 82%; } }
   @media (max-width: 767px) {
     .main-nav__container {
       width: 80%; } }
@@ -859,7 +853,9 @@ input[type="text"],
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      padding-bottom: 20px; } }
+      -webkit-column-gap: 10px;
+         -moz-column-gap: 10px;
+              column-gap: 10px; } }
   @media (max-width: 767px) {
     .main-nav__list-contacts {
       width: 78px;
