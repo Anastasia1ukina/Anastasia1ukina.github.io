@@ -29,6 +29,10 @@
 
 .main-nav__list {
   display: flex;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: row-reverse;
+  }
 }
 
 .main-nav__list ul {
@@ -46,32 +50,6 @@
   @media (max-width: $tablet-width) {
     column-gap: 40px;
     display: contents;
-  }
-}
-
-.main-nav__email {
-  @media (max-width: $tablet-width) {
-    position: absolute;
-    top: 30px;
-    right: 140px;
-  }
-
-  @media (max-width: $mobile-width) {
-    top: 20px;
-    right: 105px;
-  }
-}
-
-.main-nav__icon-phone-call {
-  @media (max-width: $tablet-width) {
-    position: absolute;
-    top: 30px;
-    right: 80px;
-  }
-
-  @media (max-width: $mobile-width) {
-    top: 20px;
-    right: 45px;
   }
 }
 
@@ -116,7 +94,7 @@
   display: flex;
 }
 
-.main-nav__link-user div {
+.main-nav__contacts {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -155,9 +133,40 @@
 
   @media (max-width: $tablet-width) {
     width: 87%;
+    position: relative;
+    flex-direction: row-reverse;
+    align-self: center;
   }
 
   @media (max-width: $mobile-width) {
     width: 80%;
   }
 }
+
+.main-nav__list-contacts {
+  display: flex;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    margin: 0;
+    width: 90px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 78px;
+    padding-bottom: 10px;
+  }
+}
+
+.main-nav__phone-call {
+  @media (max-width: $tablet-width) {
+    margin-right: 8px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-right: -3px;
+  }
+}
+

@@ -678,10 +678,13 @@ input[type="text"],
   cursor: pointer; }
   @media (max-width: 1023px) {
     .page-header__logo {
-      margin-left: -22px; } }
+      position: absolute;
+      left: -23px;
+      top: -10px; } }
   @media (max-width: 767px) {
     .page-header__logo {
-      height: 0; } }
+      height: 0;
+      top: -5px; } }
 
 .page-footer__contacts-item {
   font-family: "PT Mono", "Arial", sans-serif;
@@ -724,6 +727,12 @@ input[type="text"],
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media (max-width: 1023px) {
+    .main-nav__list {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse; } }
 
 .main-nav__list ul {
   display: -webkit-box;
@@ -749,28 +758,6 @@ input[type="text"],
          -moz-column-gap: 40px;
               column-gap: 40px;
       display: contents; } }
-
-@media (max-width: 1023px) {
-  .main-nav__email {
-    position: absolute;
-    top: 30px;
-    right: 140px; } }
-
-@media (max-width: 767px) {
-  .main-nav__email {
-    top: 20px;
-    right: 105px; } }
-
-@media (max-width: 1023px) {
-  .main-nav__icon-phone-call {
-    position: absolute;
-    top: 30px;
-    right: 80px; } }
-
-@media (max-width: 767px) {
-  .main-nav__icon-phone-call {
-    top: 20px;
-    right: 45px; } }
 
 .main-nav__toggle {
   width: 160px;
@@ -812,7 +799,7 @@ input[type="text"],
   display: -ms-flexbox;
   display: flex; }
 
-.main-nav__link-user div {
+.main-nav__contacts {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -822,7 +809,7 @@ input[type="text"],
   padding-left: 15px;
   margin-top: 3px; }
   @media (max-width: 1023px) {
-    .main-nav__link-user div {
+    .main-nav__contacts {
       display: none; } }
 
 .main-nav__item {
@@ -847,10 +834,44 @@ input[type="text"],
       width: 95%; } }
   @media (max-width: 1023px) {
     .main-nav__container {
-      width: 87%; } }
+      width: 87%;
+      position: relative;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center; } }
   @media (max-width: 767px) {
     .main-nav__container {
       width: 80%; } }
+
+.main-nav__list-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto; }
+  @media (max-width: 1023px) {
+    .main-nav__list-contacts {
+      margin: 0;
+      width: 90px;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding-bottom: 20px; } }
+  @media (max-width: 767px) {
+    .main-nav__list-contacts {
+      width: 78px;
+      padding-bottom: 10px; } }
+
+@media (max-width: 1023px) {
+  .main-nav__phone-call {
+    margin-right: 8px; } }
+
+@media (max-width: 767px) {
+  .main-nav__phone-call {
+    margin-right: -3px; } }
 
 .benefits {
   width: 1220px;
